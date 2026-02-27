@@ -104,7 +104,8 @@ export default function InvestmentPage() {
           className="absolute inset-0 titan-grid opacity-30 pointer-events-none"
           aria-hidden="true"
         />
-        <div className="w-container max-w-none mx-auto px-0 md:px-0 px-6 relative">
+        <div className="w-container max-w-none mx-auto px-0 md:px-0 relative">
+
           <div className="flex flex-wrap gap-2 mb-12">
             <Link
               href="/"

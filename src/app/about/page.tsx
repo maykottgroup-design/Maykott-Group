@@ -78,9 +78,10 @@ export default function AboutPage() {
     <SiteLayout>
       {/* ═══════════════════════════════════ HERO ═══════════════════════════════════ */}
       <section
-        className="pt-16 pb-16 px-6 bg-primary"
+        className="pt-16 pb-16 bg-primary"
         aria-label="About Maykott Group"
       >
+
         <div className="w-container max-w-none mx-auto px-0 md:px-0">
           <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-8 block">
             Established Excellence
@@ -129,9 +130,10 @@ export default function AboutPage() {
 
       {/* ═══════════════════════════ 10-YEAR AMBITION ════════════════════════════ */}
       <section
-        className="py-32 px-6 bg-white"
+        className="py-32 bg-white"
         aria-label="10-Year Strategic Ambition"
       >
+
         <div className="w-container max-w-none mx-auto px-0 md:px-0">
           <div className="grid md:grid-cols-12 gap-16 items-center">
             <div className="md:col-span-6">
@@ -209,9 +211,10 @@ export default function AboutPage() {
 
       {/* ═══════════════════════════ TITAN FRAMEWORK ═════════════════════════════ */}
       <section
-        className="py-40 px-6 bg-primary border-t border-white/5"
+        className="py-40 bg-primary border-t border-white/5"
         aria-label="The Titan Framework — Operational Philosophy"
       >
+
         <div className="w-container max-w-none mx-auto px-0 md:px-0">
           <div className="text-center mb-24">
             <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-4 block">
@@ -259,9 +262,10 @@ export default function AboutPage() {
 
       {/* ═══════════════════════════ TIMELINE ════════════════════════════════════ */}
       <section
-        className="py-40 px-6 bg-off-white"
+        className="py-40 bg-off-white"
         aria-label="Company Evolution Timeline"
       >
+
         <div className="w-container max-w-none mx-auto px-0 md:px-0">
           <div className="text-center mb-24">
             <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-primary">
@@ -325,10 +329,11 @@ export default function AboutPage() {
 
       {/* ═══════════════════════════ FULL LEADERSHIP ═════════════════════════════ */}
       <section
-        className="py-32 px-6 bg-primary"
+        className="py-24 bg-primary"
         id="leadership"
         aria-label="Executive Leadership Board"
       >
+
         <div className="w-container max-w-none mx-auto px-0 md:px-0">
           <span className="text-[10px] font-bold uppercase tracking-widest text-accent-gold mb-4 block">
             Architects of Scale
@@ -346,11 +351,12 @@ export default function AboutPage() {
                 <Image
                   src={leader.imageUrl}
                   alt={leader.imageAlt}
-                  width={200}
-                  height={250}
-                  className="w-44 h-56 object-cover hover:scale-105 transition-all flex-shrink-0"
+                  width={280}
+                  height={350}
+                  className="w-56 h-72 object-cover hover:scale-105 transition-all flex-shrink-0"
 
                 />
+
                 <div>
                   <h3 className="text-2xl font-bold uppercase text-white">
                     {leader.name}
@@ -382,9 +388,10 @@ export default function AboutPage() {
 
       {/* ═══════════════════════════ CTA ═════════════════════════════════════════ */}
       <section
-        className="relative py-32 md:py-48 px-6 bg-white overflow-hidden flex items-center justify-center"
+        className="relative py-32 md:py-48 bg-white overflow-hidden flex items-center justify-center"
         aria-label="Call to Action"
       >
+
         <div
           className="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-[0.03]"
           aria-hidden="true"
