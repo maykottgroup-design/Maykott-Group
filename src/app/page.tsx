@@ -36,11 +36,12 @@ export default function HomePage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-8 animate-fade-in">
                 Established Excellence
               </p>
-              <h1 className="text-[12vw] sm:text-[10vw] md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.9] uppercase animate-slide-up flex flex-col break-words">
+              <h1 className="text-[10.5vw] sm:text-[8vw] md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.9] uppercase animate-slide-up flex flex-col">
                 <span>Shaping The</span>
                 <span>Architectural</span>
                 <span>Future.</span>
               </h1>
+
 
 
             </div>

@@ -217,9 +217,10 @@ export default function PortfolioPage() {
               <span className="text-accent-gold text-[10px] font-black uppercase tracking-[0.4em] mb-6 block">
                 Established Excellence
               </span>
-              <h1 className="text-[12vw] sm:text-[10vw] md:text-8xl font-black text-primary tracking-tighter leading-[0.9] mb-8 uppercase">
+              <h1 className="text-[10.5vw] sm:text-[8vw] md:text-8xl font-black text-primary tracking-tighter leading-[0.9] mb-8 uppercase">
                 SHAPING THE <br /> ARCHITECTURAL <br /> FUTURE.
               </h1>
+
 
 
               <div className="flex flex-wrap gap-4 lg:justify-end">
