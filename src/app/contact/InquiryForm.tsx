@@ -72,12 +72,12 @@ export default function InquiryForm() {
             </div>
 
             <form
-                className="flex flex-col gap-7 md:gap-10"
+                className="flex flex-col gap-6 md:gap-9"
                 onSubmit={handleSubmit}
                 noValidate
             >
                 {/* Principal Fields */}
-                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-20 border-0 p-0">
+                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 border-0 p-0">
                     <legend className="sr-only">Principal Information</legend>
                     <div className="space-y-2">
                         <label
@@ -114,7 +114,7 @@ export default function InquiryForm() {
                 </fieldset>
 
                 {/* Email & Phone */}
-                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-20 border-0 p-0">
+                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 border-0 p-0">
                     <legend className="sr-only">Contact Information</legend>
                     <div className="space-y-2">
                         <label
@@ -150,7 +150,7 @@ export default function InquiryForm() {
 
                 {/* Intent Selection */}
                 <fieldset className="flex flex-col gap-8 border-0 p-0">
-                    <legend className="text-[10px] font-bold uppercase tracking-widest text-primary/50">
+                    <legend className="text-[10px] font-bold uppercase tracking-widest text-primary/50 mb-6">
                         Nature of Strategic Intent
                     </legend>
                     <div
