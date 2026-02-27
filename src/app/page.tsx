@@ -36,11 +36,12 @@ export default function HomePage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-8 animate-fade-in">
                 Established Excellence
               </p>
-              <h1 className="text-4xl sm:text-6xl md:text-9xl font-bold tracking-tighter leading-[0.85] uppercase animate-slide-up flex flex-col">
+              <h1 className="text-5xl sm:text-7xl md:text-[8rem] lg:text-[10rem] xl:text-[12rem] font-black tracking-tighter leading-[0.8] uppercase animate-slide-up flex flex-col">
                 <span>Shaping The</span>
                 <span>Architectural</span>
                 <span>Future.</span>
               </h1>
+
             </div>
 
             <div className="lg:max-w-sm xl:max-w-md pb-6 animate-fade-in">
@@ -407,7 +408,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+
             {featuredLeaders.map((leader) => (
               <article
                 key={leader.id}

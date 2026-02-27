@@ -88,9 +88,10 @@ export default function Navigation() {
                 href={link.href}
                 role="menuitem"
                 className={`transition-colors duration-200 hover:text-accent-gold relative pb-1 ${pathname === link.href
-                  ? "text-accent-gold border-b-2 border-accent-gold"
+                  ? "text-accent-gold font-black"
                   : "text-primary"
                   }`}
+
 
               >
                 {link.label}
@@ -110,25 +111,28 @@ export default function Navigation() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden flex flex-col items-center justify-center p-2 w-10 h-10 gap-1.5 focus:outline-none"
+            className="md:hidden flex flex-col items-center justify-center p-2 w-10 h-10 gap-1.5 focus:outline-none group"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
-            <span
-              className={`block w-6 h-0.5 bg-primary transition-all duration-300 transform origin-center ${isMenuOpen ? "rotate-45 translate-y-2" : ""
-                }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-primary transition-all duration-300 ${isMenuOpen ? "opacity-0" : "opacity-100"
-                }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-primary transition-all duration-300 transform origin-center ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-                }`}
-            />
+            <div className="relative w-6 h-5">
+              <span
+                className={`absolute left-0 top-0 block h-0.5 bg-primary transition-all duration-300 transform origin-left ${isMenuOpen ? "w-7 rotate-45 translate-y-[-2px] translate-x-[2px]" : "w-6"
+                  }`}
+              />
+              <span
+                className={`absolute left-0 top-1/2 -translate-y-1/2 block h-0.5 bg-accent-gold transition-all duration-300 ${isMenuOpen ? "w-0 opacity-0" : "w-4 opacity-100"
+                  }`}
+              />
+              <span
+                className={`absolute left-0 bottom-0 block h-0.5 bg-primary transition-all duration-300 transform origin-left ${isMenuOpen ? "w-7 -rotate-45 translate-y-[2px] translate-x-[2px]" : "w-6"
+                  }`}
+              />
+            </div>
           </button>
+
 
         </div>
 

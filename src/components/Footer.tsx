@@ -110,20 +110,14 @@ export default function Footer() {
           </span>
           <div className="flex gap-6 text-white/40">
             <a
-              href="#"
-              aria-label="Share"
-              className="hover:text-accent-gold transition-colors"
-            >
-              <span className="material-symbols-outlined text-sm">share</span>
-            </a>
-            <a
-              href="#"
+              href="https://www.linkedin.com/company/maykott-group"
               aria-label="LinkedIn"
               className="hover:text-accent-gold transition-colors"
             >
               <span className="material-symbols-outlined text-sm">public</span>
             </a>
           </div>
+
         </div>
       </div>
     </footer>
