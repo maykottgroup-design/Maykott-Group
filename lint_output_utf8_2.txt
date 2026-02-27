@@ -1,0 +1,12 @@
+﻿
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\app\insights\page.tsx
+  8:3  warning  'insights' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\app\layout.tsx
+  84:9  warning  Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font
+
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\app\portfolio\page.tsx
+  38:9  warning  'maxVal' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 3 problems (0 errors, 3 warnings)
+

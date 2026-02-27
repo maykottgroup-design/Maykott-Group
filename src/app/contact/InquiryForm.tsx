@@ -24,6 +24,8 @@ export default function InquiryForm() {
     const [selectedIntent, setSelectedIntent] = useState<string | null>(null);
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [referenceId] = useState(() => Math.floor(Math.random() * 90000) + 10000);
+
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -51,8 +53,9 @@ export default function InquiryForm() {
                     our acquisitions desk will respond within 24 hours.
                 </p>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-primary/30">
-                    Reference: MK-{Math.floor(Math.random() * 90000) + 10000}-G
+                    Reference: MK-{referenceId}-G
                 </p>
+
             </div>
         );
     }

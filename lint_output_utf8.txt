@@ -1,0 +1,50 @@
+﻿
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\app\contact\InquiryForm.tsx
+  54:47  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\app\contact\InquiryForm.tsx:54:47
+  52 |                 </p>
+  53 |                 <p className="text-[10px] font-bold uppercase tracking-widest text-primary/30">
+> 54 |                     Reference: MK-{Math.floor(Math.random() * 90000) + 10000}-G
+     |                                               ^^^^^^^^^^^^^ Cannot call impure function
+  55 |                 </p>
+  56 |             </div>
+  57 |         );  react-hooks/purity
+
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\app\insights\id\page.tsx
+   87:72   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   87:86   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  100:41   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  100:150  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\app\insights\page.tsx
+  8:3  warning  'insights' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\app\layout.tsx
+  84:9  warning  Custom fonts not added in `pages/_document.js` will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font
+
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\app\portfolio\page.tsx
+  38:9  warning  'maxVal' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\components\Navigation.tsx
+  36:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\Sahil\Maykott Group\Maykott\maykott_group\website\src\components\Navigation.tsx:36:5
+  34 |   // Close mobile menu on route change
+  35 |   useEffect(() => {
+> 36 |     setIsMenuOpen(false);
+     |     ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  37 |   }, [pathname, setIsMenuOpen]);
+  38 |
+  39 |  react-hooks/set-state-in-effect
+
+Γ£û 9 problems (6 errors, 3 warnings)
+

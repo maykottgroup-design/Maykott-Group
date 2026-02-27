@@ -33,20 +33,24 @@ export default function Navigation() {
 
   // Close mobile menu on route change
   useEffect(() => {
-    setIsMenuOpen(false);
-  }, [pathname]);
+    const timer = setTimeout(() => setIsMenuOpen(false), 0);
+    return () => clearTimeout(timer);
+  }, [pathname, setIsMenuOpen]);
+
+
 
   return (
     <>
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled
-            ? "bg-white/95 backdrop-blur-md border-b border-primary/10 shadow-sm"
-            : "bg-background-light/90 backdrop-blur-sm border-b border-primary/5"
+          ? "bg-white/95 backdrop-blur-md border-b border-primary/10 shadow-sm"
+          : "bg-background-light/90 backdrop-blur-sm border-b border-primary/5"
           }`}
         role="navigation"
         aria-label="Main navigation"
       >
-        <div className="w-container max-w-none mx-auto px-0 h-20 flex items-center justify-between">
+        <div className="w-container max-w-none mx-auto px-0 h-16 md:h-20 flex items-center justify-between">
+
           {/* Logo */}
           <Link
             href="/"
@@ -67,10 +71,11 @@ export default function Navigation() {
                 />
               </svg>
             </div>
-            <span className="text-xl font-black tracking-tighter uppercase text-primary">
+            <span className="text-lg md:text-xl font-black tracking-tighter uppercase text-primary">
               Maykott <span className="text-accent-gold">Group</span>
             </span>
           </Link>
+
 
           {/* Desktop Navigation */}
           <div
@@ -83,8 +88,8 @@ export default function Navigation() {
                 href={link.href}
                 role="menuitem"
                 className={`transition-colors duration-200 hover:text-accent-gold relative pb-1 ${pathname === link.href
-                    ? "text-primary border-b-2 border-accent-gold"
-                    : "text-primary"
+                  ? "text-primary border-b-2 border-accent-gold"
+                  : "text-primary"
                   }`}
               >
                 {link.label}
@@ -130,8 +135,8 @@ export default function Navigation() {
                   href={link.href}
                   role="menuitem"
                   className={`text-sm font-bold uppercase tracking-widest transition-colors duration-200 ${pathname === link.href
-                      ? "text-accent-gold"
-                      : "text-primary hover:text-accent-gold"
+                    ? "text-accent-gold"
+                    : "text-primary hover:text-accent-gold"
                     }`}
                 >
                   {link.label}

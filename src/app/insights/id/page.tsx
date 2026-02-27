@@ -39,9 +39,10 @@ export default function InsightDetailPage() {
                             {insight.sectorLabel} Intelligence
                         </span>
 
-                        <h1 className="text-4xl md:text-6xl font-black text-primary tracking-tighter uppercase leading-[1.1] mb-8">
+                        <h1 className="text-3xl md:text-6xl font-black text-primary tracking-tighter uppercase leading-[1.1] mb-8">
                             {insight.title}
                         </h1>
+
 
                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 pt-8 border-t border-primary/10">
                             <div className="flex items-center gap-4">
@@ -84,8 +85,9 @@ export default function InsightDetailPage() {
                             <div className="space-y-8 text-primary/70 leading-relaxed text-lg">
                                 <p>
                                     The shifting landscape of global industrial capital requires a new framework for evaluation.
-                                    As we navigate the complexities of "The Next Era," the traditional benchmarks of institutional
+                                    As we navigate the complexities of &quot;The Next Era,&quot; the traditional benchmarks of institutional
                                     growth are being rewritten by technological convergence and geopolitical realignments.
+
                                 </p>
                                 <h3 className="text-2xl font-black uppercase tracking-tighter text-primary pt-8">The Structural Foundation</h3>
                                 <p>
@@ -96,9 +98,11 @@ export default function InsightDetailPage() {
                                 </p>
                                 <div className="my-12 p-10 bg-primary text-white relative overflow-hidden">
                                     <div className="titan-grid opacity-10 absolute inset-0"></div>
-                                    <p className="relative text-3xl font-black italic tracking-tighter leading-tight">
-                                        "In an era of noise, structural precision is the only signal that matters for long-term capital preservation."
+                                    <p className="relative text-2xl md:text-3xl font-black italic tracking-tighter leading-tight">
+                                        &quot;In an era of noise, structural precision is the only signal that matters for long-term capital preservation.&quot;
                                     </p>
+
+
                                     <cite className="relative block mt-6 text-accent-gold text-[10px] font-bold uppercase tracking-widest not-italic">
                                         — {insight.author}, Maykott Group
                                     </cite>
@@ -124,8 +128,9 @@ export default function InsightDetailPage() {
                 {/* ═══════════════════════════════════ RELATED ═══════════════════════════════════ */}
                 <section className="bg-white py-24 border-t border-primary/5">
                     <div className="w-container mx-auto">
-                        <div className="flex justify-between items-end mb-16">
-                            <h2 className="text-4xl font-black uppercase tracking-tighter text-primary">Related <span className="text-primary/20">Readings</span></h2>
+                        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
+                            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-primary">Related <span className="text-primary/20">Readings</span></h2>
+
                             <Link href="/insights" className="text-[10px] font-black uppercase tracking-widest border-b border-primary pb-1 hover:text-accent-gold hover:border-accent-gold transition-colors">
                                 View All Reports
                             </Link>

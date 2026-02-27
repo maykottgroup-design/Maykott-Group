@@ -36,12 +36,13 @@ export default function HomePage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-8 animate-fade-in">
                 Established Excellence
               </p>
-              <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-[0.85] uppercase animate-slide-up flex flex-col">
+              <h1 className="text-4xl sm:text-6xl md:text-9xl font-bold tracking-tighter leading-[0.85] uppercase animate-slide-up flex flex-col">
                 <span>Shaping The</span>
                 <span>Architectural</span>
                 <span>Future.</span>
               </h1>
             </div>
+
             <div className="lg:max-w-sm xl:max-w-md pb-6 animate-fade-in">
               <p className="text-primary/70 text-lg leading-relaxed font-medium border-l border-accent-gold/30 pl-8">
                 A premium legacy built on institutional stability, prestige, and
@@ -90,17 +91,18 @@ export default function HomePage() {
               {statsData.map((stat, i) => (
                 <div
                   key={i}
-                  className="p-10 border-b md:border-b-0 border-r border-white/5 last:border-r-0"
+                  className="p-6 md:p-10 border-b md:border-b-0 border-r border-white/5 last:border-r-0"
                 >
-                  <p className="text-4xl font-black tracking-tighter text-accent-gold mb-2">
+                  <p className="text-2xl md:text-4xl font-black tracking-tighter text-accent-gold mb-1">
                     {stat.value}
                   </p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-white/50">
+                  <p className="text-[8px] md:text-[10px] font-bold uppercase tracking-widest text-white/50">
                     {stat.label}
                   </p>
                 </div>
               ))}
             </div>
+
           </div>
         </div>
       </section>
@@ -116,11 +118,12 @@ export default function HomePage() {
               <h2 className="text-accent-gold text-xs font-bold uppercase tracking-[0.4em] mb-6">
                 The Maykott Standard
               </h2>
-              <h3 className="text-4xl md:text-6xl font-black uppercase leading-tight mb-8">
+              <h3 className="text-3xl md:text-6xl font-black uppercase leading-tight mb-8">
                 A 10-Year Narrative of Excellence.
               </h3>
-              <div className="h-1 w-24 bg-accent-gold mb-12" />
+              <div className="h-1 w-24 bg-accent-gold mb-8 md:mb-12" />
             </div>
+
             <div className="space-y-8 text-white/90 text-lg leading-relaxed font-normal">
               <p>
                 A structured ambition narrative focused on operational
@@ -181,11 +184,12 @@ export default function HomePage() {
       >
         <div className="w-container max-w-none mx-auto px-0">
           <div className="flex justify-between items-end mb-16">
-            <h2 className="text-5xl font-black uppercase tracking-tighter">
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter">
               Portfolio
               <br />
               Holdings
             </h2>
+
             <Link
               href="/portfolio"
               className="hidden md:flex items-center gap-2 text-xs font-bold uppercase tracking-widest hover:text-accent-gold transition-colors"
@@ -261,11 +265,12 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
             {/* Left: Criteria */}
             <div>
-              <h2 className="text-5xl font-black uppercase tracking-tighter mb-8 leading-none">
+              <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-none">
                 Strategic
                 <br />
                 Rigor.
               </h2>
+
               <p className="text-xl text-primary/60 mb-12">
                 We acquire and scale mid-market B2B companies that are
                 foundational to global industry.
@@ -278,15 +283,16 @@ export default function HomePage() {
                 ].map((criterion) => (
                   <div
                     key={criterion.label}
-                    className="p-8 border border-primary/10 bg-white flex justify-between items-center hover:border-accent-gold transition-colors group"
+                    className="p-6 md:p-8 border border-primary/10 bg-white flex justify-between items-center hover:border-accent-gold transition-colors group"
                   >
-                    <span className="text-sm font-bold uppercase tracking-widest">
+                    <span className="text-[10px] md:text-sm font-bold uppercase tracking-widest">
                       {criterion.label}
                     </span>
-                    <span className="text-2xl font-black text-primary group-hover:text-accent-gold transition-colors">
+                    <span className="text-xl md:text-2xl font-black text-primary group-hover:text-accent-gold transition-colors">
                       {criterion.value}
                     </span>
                   </div>
+
                 ))}
               </div>
             </div>
@@ -318,13 +324,15 @@ export default function HomePage() {
       <section className="bg-white py-24" aria-label="Global Network">
         <div className="w-container max-w-none mx-auto px-0">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">
+            <h2 className="text-3xl md:text-6xl font-black uppercase tracking-tighter mb-4">
               Global Network
             </h2>
             <div className="w-20 h-1 bg-accent-gold mx-auto" />
           </div>
 
-          <div className="relative w-full aspect-[2/1] bg-background-light overflow-hidden rounded-sm group titan-grid">
+
+          <div className="relative w-full aspect-[4/3] md:aspect-[2/1] bg-background-light overflow-hidden rounded-sm group titan-grid">
+
             {/* World Map placeholder with overlay */}
             <div className="absolute inset-0 flex items-center justify-center opacity-30">
               <div
@@ -366,15 +374,16 @@ export default function HomePage() {
             ))}
 
             {/* Info Callout */}
-            <div className="absolute bottom-10 left-10 bg-primary p-6 text-white max-w-sm shadow-2xl">
-              <h5 className="font-black uppercase text-xl mb-2">
+            <div className="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 md:right-auto bg-primary p-4 md:p-6 text-white max-w-sm shadow-2xl">
+              <h5 className="font-black uppercase text-lg md:text-xl mb-2">
                 50+ HUBS WORLDWIDE
               </h5>
-              <p className="text-xs text-white/60 tracking-widest uppercase">
+              <p className="text-[8px] md:text-xs text-white/60 tracking-widest uppercase">
                 5 CONTINENTS. 12 KEY CITIES. 1 CORE MISSION: UNIFIED INDUSTRIAL
                 GROWTH.
               </p>
             </div>
+
           </div>
         </div>
       </section>
@@ -387,9 +396,10 @@ export default function HomePage() {
               <p className="text-accent-gold text-xs font-bold uppercase tracking-[0.4em] mb-4">
                 Architects of Scale
               </p>
-              <h2 className="text-white text-5xl font-black uppercase tracking-tighter">
+              <h2 className="text-white text-3xl md:text-5xl font-black uppercase tracking-tighter">
                 Leadership Team
               </h2>
+
             </div>
             <p className="text-white/50 max-w-sm uppercase text-xs tracking-widest leading-relaxed">
               OUR EXECUTIVE COMMITTED TO THE OPERATIONALIZATION OF A GLOBAL
@@ -444,15 +454,17 @@ export default function HomePage() {
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] select-none pointer-events-none w-full text-center overflow-hidden flex justify-center items-center"
           aria-hidden="true"
         >
-          <span className="text-[120px] md:text-[250px] lg:text-[340px] font-black leading-none uppercase tracking-tighter whitespace-nowrap">
+          <span className="text-[60px] sm:text-[120px] md:text-[250px] lg:text-[340px] font-black leading-none uppercase tracking-tighter whitespace-nowrap">
             MAYKOTT
           </span>
         </div>
 
+
         <div className="w-container max-w-none mx-auto px-0 text-center relative z-10">
-          <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-12">
+          <h2 className="text-3xl sm:text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-12">
             Let&apos;s Build the Future Together.
           </h2>
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link
               href="/contact"

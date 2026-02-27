@@ -35,8 +35,8 @@ const sectorFilters = [
  * SparklineChart: displays a micro bar chart from trend values.
  */
 function SparklineChart({ trend }: { trend: number[] }) {
-  const maxVal = Math.max(...trend);
   return (
+
     <div className="w-16 h-4 flex items-end gap-[2px]" aria-hidden="true">
       {trend.map((val, i) => {
         const heightMap: Record<number, string> = {
@@ -209,9 +209,10 @@ export default function PortfolioPage() {
               <span className="text-accent-gold text-[10px] font-black uppercase tracking-[0.4em] mb-6 block">
                 Established Excellence
               </span>
-              <h1 className="text-6xl md:text-8xl font-black text-primary tracking-tighter leading-[0.9] mb-8 uppercase">
+              <h1 className="text-4xl md:text-8xl font-black text-primary tracking-tighter leading-[0.9] mb-8 uppercase">
                 SHAPING THE <br /> ARCHITECTURAL <br /> FUTURE.
               </h1>
+
               <div className="flex flex-wrap gap-4">
                 <button
                   onClick={() => {
@@ -264,12 +265,13 @@ export default function PortfolioPage() {
                 key={stat.label}
                 className="p-8 border-r border-primary/10 last:border-r-0 text-center"
               >
-                <p className="text-3xl font-black tracking-tighter text-primary mb-1">
+                <p className="text-2xl md:text-3xl font-black tracking-tighter text-primary mb-1">
                   {stat.value}
                 </p>
-                <p className="text-[9px] font-bold uppercase tracking-widest text-primary/40">
+                <p className="text-[8px] md:text-[9px] font-bold uppercase tracking-widest text-primary/40">
                   {stat.label}
                 </p>
+
               </div>
             ))}
           </div>
@@ -340,6 +342,7 @@ export default function PortfolioPage() {
           </div>
         </div>
 
+
         {/* ═══════════════════ PORTFOLIO GRID ═══════════════════ */}
         <section
           id="portfolio-grid"
@@ -385,9 +388,10 @@ export default function PortfolioPage() {
               <span className="text-accent-gold text-[10px] font-black uppercase tracking-[0.4em] mb-6 block">
                 Institutional Access
               </span>
-              <h2 className="text-5xl md:text-6xl font-black text-white tracking-tighter leading-tight mb-8 uppercase">
+              <h2 className="text-3xl md:text-6xl font-black text-white tracking-tighter leading-tight mb-8 uppercase">
                 Strategic <br /> Inquiry.
               </h2>
+
               <p className="text-white/40 text-sm leading-relaxed font-light max-w-lg mb-10">
                 We invite institutional investors and potential strategic
                 partners to explore co-investment opportunities across our

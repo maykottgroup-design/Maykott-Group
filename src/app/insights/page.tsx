@@ -5,10 +5,10 @@ import SiteLayout from "@/components/SiteLayout";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  insights,
   getFeaturedInsight,
   getInsightsBySector,
 } from "@/data/insights";
+
 
 const sectorFilters = [
   { key: "all", label: "All Sectors" },
@@ -76,9 +76,10 @@ export default function InsightsPage() {
                   Research Report 2025
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-black leading-[1.1] mb-6 tracking-tight">
+              <h1 className="text-3xl md:text-5xl font-black leading-[1.1] mb-6 tracking-tight">
                 {featuredInsight.title}
               </h1>
+
               <p className="text-lg text-primary/60 font-light mb-10 leading-relaxed italic">
                 {featuredInsight.excerpt}
               </p>
@@ -113,9 +114,10 @@ export default function InsightsPage() {
       <div className="w-container max-w-none mx-auto px-0 md:px-0 px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-primary pb-4 mb-12">
           <div>
-            <h2 className="text-3xl font-black uppercase tracking-tighter">
+            <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tighter">
               Intelligence Repository
             </h2>
+
             <p className="text-sm font-medium text-primary/40 mt-1 uppercase tracking-widest">
               Curated data &amp; analysis for sovereign funds
             </p>
@@ -132,8 +134,8 @@ export default function InsightsPage() {
                 aria-selected={activeFilter === filter.key}
                 onClick={() => setActiveFilter(filter.key)}
                 className={`whitespace-nowrap text-[11px] font-extrabold uppercase tracking-widest px-1 pb-1 transition-colors ${activeFilter === filter.key
-                    ? "border-b-2 border-primary text-primary"
-                    : "text-primary/30 hover:text-primary"
+                  ? "border-b-2 border-primary text-primary"
+                  : "text-primary/30 hover:text-primary"
                   }`}
               >
                 {filter.label}
@@ -219,12 +221,13 @@ export default function InsightsPage() {
             >
               format_quote
             </span>
-            <blockquote className="text-3xl md:text-4xl font-light italic leading-snug mb-12">
+            <blockquote className="text-2xl md:text-4xl font-light italic leading-snug mb-12">
               &ldquo;The fragmentation of global trade routes is not a temporary
               disruption—it is the birth of a new structural reality. Our focus
               must shift from &lsquo;just-in-time&rsquo; efficiency to
               &lsquo;just-in-case&rsquo; institutional resilience.&rdquo;
             </blockquote>
+
             <div className="flex items-center gap-6">
               <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"

@@ -26,11 +26,12 @@ export default function Footer() {
     <footer className="bg-primary text-white pt-24 pb-12" role="contentinfo">
       <div className="w-container max-w-none mx-auto px-0">
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mb-24">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-8 group">
-              <div className="size-8 bg-accent-gold flex items-center justify-center rounded-sm">
+            <Link href="/" className="flex items-center gap-2 md:gap-3 mb-8 group">
+              <div className="size-6 md:size-8 bg-accent-gold flex items-center justify-center rounded-sm">
+
                 <svg
                   className="text-primary size-4"
                   fill="none"
@@ -44,10 +45,11 @@ export default function Footer() {
                   />
                 </svg>
               </div>
-              <span className="text-2xl font-black tracking-tighter uppercase">
+              <span className="text-xl md:text-2xl font-black tracking-tighter uppercase">
                 Maykott <span className="text-accent-gold">Group</span>
               </span>
             </Link>
+
             <div className="text-white/70 max-w-sm text-xs md:text-sm leading-relaxed mb-6 font-medium tracking-wide">
               <p className="mb-4">
                 2800 OAKVILLE HIGHWAY, SUITE 4200, CENTERVILLE, OAK.
