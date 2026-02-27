@@ -259,25 +259,29 @@ export default function InsightsPage() {
                   "The Geopolitics of Semiconductors: A New Gold Standard?",
                 author: "Elena Vostakova",
                 role: "Head of Emerging Markets Intelligence",
+                id: "semiconductor-geopolitics",
               },
               {
                 title:
                   "Sovereign Wealth Trends: The Pivot to Sustainable Forestry",
                 author: "Marcus Thorne",
                 role: "Principal Economist",
+                id: "sovereign-wealth-sustainable-forestry",
               },
             ].map((item) => (
-              <article key={item.title} className="group cursor-pointer">
-                <p className="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-3">
-                  Recent Commentary
-                </p>
-                <h4 className="text-xl font-bold mb-4 group-hover:text-primary transition-all p-4 -ml-4 hover:bg-white group-hover:text-black">
-                  {item.title}
-                </h4>
-                <p className="text-sm opacity-60 leading-relaxed italic">
-                  By {item.author}, {item.role}
-                </p>
-              </article>
+              <Link href={`/insights/${item.id}`} key={item.id} className="group block">
+                <article className="cursor-pointer">
+                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-40 mb-3 group-hover:opacity-100 transition-opacity">
+                    Recent Commentary
+                  </p>
+                  <h4 className="text-xl font-bold mb-4 group-hover:text-accent-gold transition-colors p-4 -ml-4 hover:bg-white/5">
+                    {item.title}
+                  </h4>
+                  <p className="text-sm opacity-60 leading-relaxed italic group-hover:opacity-80 transition-opacity">
+                    By {item.author}, {item.role}
+                  </p>
+                </article>
+              </Link>
             ))}
           </div>
         </div>

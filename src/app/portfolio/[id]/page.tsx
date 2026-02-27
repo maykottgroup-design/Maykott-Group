@@ -132,7 +132,7 @@ export default function SubsidiaryDetailPage() {
                                         </div>
 
                                         <Link
-                                            href="/contact"
+                                            href="/inquiry"
                                             className="mt-12 block w-full bg-black text-white py-5 text-center text-[10px] font-black uppercase tracking-[0.2em] hover:bg-accent-gold transition-all"
                                         >
                                             Institutional Inquiry
@@ -158,7 +158,7 @@ export default function SubsidiaryDetailPage() {
                         </h2>
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                             <Link
-                                href="/contact"
+                                href="/inquiry"
                                 className="bg-accent-gold text-primary px-10 py-5 text-[10px] font-black uppercase tracking-[0.2em] hover:bg-white transition-all min-w-[280px]"
                             >
                                 Direct Inquiry

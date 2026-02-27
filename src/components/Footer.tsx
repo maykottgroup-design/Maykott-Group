@@ -65,10 +65,10 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h6 className="text-accent-gold text-[10px] font-bold uppercase tracking-widest mb-8">
+            <h6 className="text-accent-gold text-[10px] font-bold uppercase tracking-wider mb-8">
               Navigation
             </h6>
-            <ul className="space-y-4 text-xs font-bold uppercase tracking-widest text-white/60">
+            <ul className="space-y-4 text-xs font-bold uppercase tracking-wider text-white/60">
               {portfolioLinks.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -84,10 +84,10 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h6 className="text-accent-gold text-[10px] font-bold uppercase tracking-widest mb-8">
+            <h6 className="text-accent-gold text-[10px] font-bold uppercase tracking-wider mb-8">
               Legal
             </h6>
-            <ul className="space-y-4 text-xs font-bold uppercase tracking-widest text-white/60">
+            <ul className="space-y-4 text-xs font-bold uppercase tracking-wider text-white/60">
               {legalLinks.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -104,7 +104,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-white/30 text-center md:text-left">
+          <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-white/30 text-center md:text-left">
             © {currentYear} MAYKOTT INDUSTRIAL HOLDING GROUP INC. ALL RIGHTS
             RESERVED.
           </span>

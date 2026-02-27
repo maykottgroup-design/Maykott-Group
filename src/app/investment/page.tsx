@@ -343,7 +343,7 @@ export default function InvestmentPage() {
                 please engage our team directly.
               </p>
               <Link
-                href="/contact"
+                href="/inquiry"
                 className="bg-black text-white text-xs font-black uppercase tracking-[0.2em] py-5 px-10 hover:bg-accent-gold transition-all flex items-center justify-center gap-4 group"
               >
                 Submit Opportunity

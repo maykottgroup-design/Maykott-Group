@@ -34,7 +34,7 @@ export default function NotFound() {
               Return to Home
             </Link>
             <Link
-              href="/contact"
+              href="/inquiry"
               className="text-xs font-bold uppercase tracking-widest border-b-2 border-primary pb-1 hover:border-accent-gold hover:text-accent-gold transition-colors"
             >
               Contact Us

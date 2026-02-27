@@ -110,7 +110,7 @@ export default function AboutPage() {
               Explore Portfolio
             </Link>
             <Link
-              href="/contact"
+              href="/inquiry"
               className="border border-white/20 px-8 py-3 text-[10px] font-bold uppercase tracking-widest text-white hover:bg-white/10 transition-colors"
             >
               Direct Inquiry
@@ -411,7 +411,7 @@ export default function AboutPage() {
           </h2>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
             <Link
-              href="/contact"
+              href="/inquiry"
               className="bg-black text-white px-10 py-5 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-accent-gold transition-all min-w-[280px] text-center"
             >
               PARTNER WITH MAYKOTT

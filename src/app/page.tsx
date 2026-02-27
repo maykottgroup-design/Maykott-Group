@@ -79,7 +79,7 @@ export default function HomePage() {
               </span>
             </Link>
             <Link
-              href="/contact"
+              href="/inquiry"
               className="bg-transparent border border-black text-black px-10 py-5 text-xs font-black uppercase tracking-[0.2em] hover:bg-black hover:text-white transition-all duration-300 text-center"
             >
               Partner With Us
@@ -471,7 +471,7 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link
-              href="/contact"
+              href="/inquiry"
               className="bg-black text-white px-16 py-6 text-sm font-bold uppercase tracking-[0.15em] hover:bg-accent-gold transition-all duration-500 w-full sm:w-auto text-center"
             >
               Partner With Maykott

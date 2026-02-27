@@ -14,7 +14,7 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/investment", label: "Investment" },
   { href: "/insights", label: "Insights" },
-  { href: "/contact", label: "Contact" },
+  { href: "/inquiry", label: "Inquiry" },
 ];
 
 export default function Navigation() {
@@ -102,7 +102,7 @@ export default function Navigation() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link
-              href="/contact"
+              href="/inquiry"
               className="bg-black text-white px-8 py-3.5 text-xs font-bold uppercase tracking-[0.15em] hover:bg-accent-gold transition-all duration-300 inline-block"
             >
               Partner With Us
@@ -158,7 +158,7 @@ export default function Navigation() {
                 </Link>
               ))}
               <Link
-                href="/contact"
+                href="/inquiry"
                 className="bg-black text-white px-8 py-3.5 text-xs font-bold uppercase tracking-[0.15em] hover:bg-accent-gold transition-all duration-300 text-center mt-2 inline-block"
               >
                 Partner With Us

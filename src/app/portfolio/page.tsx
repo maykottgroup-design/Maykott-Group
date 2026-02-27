@@ -235,7 +235,7 @@ export default function PortfolioPage() {
                   Explore Portfolio
                 </button>
                 <Link
-                  href="/contact"
+                  href="/inquiry"
                   className="border border-primary/20 text-primary px-8 py-4 text-[10px] font-black uppercase tracking-[0.2em] hover:bg-primary hover:text-white transition-all"
                 >
                   Partner With Us
@@ -410,7 +410,7 @@ export default function PortfolioPage() {
                   Investment Prospectus
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/inquiry"
                   className="border-b border-white/20 text-white/60 px-4 py-4 text-[11px] font-black uppercase tracking-[0.3em] hover:text-accent-gold hover:border-accent-gold transition-all"
                 >
                   Partner Registry

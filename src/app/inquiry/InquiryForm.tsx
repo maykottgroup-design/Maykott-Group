@@ -229,8 +229,8 @@ export default function InquiryForm() {
                                 aria-checked={formData.intent === option.key}
                                 onClick={() => handleIntentSelect(option.key)}
                                 className={`border p-6 text-left transition-all duration-300 ${formData.intent === option.key
-                                        ? "border-primary bg-primary text-white scale-[1.02] shadow-xl"
-                                        : "border-primary/10 hover:border-primary/50 hover:bg-primary/5"
+                                    ? "border-primary bg-primary text-white scale-[1.02] shadow-xl"
+                                    : "border-primary/10 hover:border-primary/50 hover:bg-primary/5"
                                     }`}
                             >
                                 <span className="block text-[11px] font-bold uppercase tracking-tighter">
@@ -303,7 +303,7 @@ export default function InquiryForm() {
                     <button
                         type="submit"
                         disabled={isLoading}
-                        className="flex items-center gap-4 group transition-all duration-300 disabled:opacity-50 px-6 py-4 rounded-sm bg-primary text-white hover:bg-primary/90 hover:shadow-lg"
+                        className="flex items-center gap-4 group transition-all duration-300 disabled:opacity-50 rounded-sm bg-black text-white px-8 py-3.5 text-xs font-bold uppercase tracking-[0.15em] hover:bg-accent-gold hover:text-black hover:shadow-lg"
                         aria-label="Submit inquiry"
                     >
                         <span className="text-[11px] font-bold uppercase tracking-[0.2em] group-hover:tracking-[0.3em] transition-all">
