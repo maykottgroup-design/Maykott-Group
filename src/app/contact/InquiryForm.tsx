@@ -72,14 +72,14 @@ export default function InquiryForm() {
             </div>
 
             <form
-                className="space-y-12"
+                className="space-y-16"
                 onSubmit={handleSubmit}
                 noValidate
             >
                 {/* Principal Fields */}
-                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-12 border-0 p-0 m-0">
+                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-16 border-0 p-0 m-0">
                     <legend className="sr-only">Principal Information</legend>
-                    <div className="space-y-4">
+                    <div className="space-y-6">
                         <label
                             htmlFor="full-name"
                             className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -91,11 +91,11 @@ export default function InquiryForm() {
                             type="text"
                             required
                             placeholder="Principal or Authorized Representative"
-                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm outline-none w-full"
+                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm outline-none w-full"
                             aria-required="true"
                         />
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-6">
                         <label
                             htmlFor="organization"
                             className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -107,16 +107,16 @@ export default function InquiryForm() {
                             type="text"
                             required
                             placeholder="Institution / Family Office"
-                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm outline-none w-full"
+                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm outline-none w-full"
                             aria-required="true"
                         />
                     </div>
                 </fieldset>
 
                 {/* Email & Phone */}
-                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-12 border-0 p-0 m-0">
+                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-16 border-0 p-0 m-0">
                     <legend className="sr-only">Contact Information</legend>
-                    <div className="space-y-4">
+                    <div className="space-y-6">
                         <label
                             htmlFor="email"
                             className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -128,11 +128,11 @@ export default function InquiryForm() {
                             type="email"
                             required
                             placeholder="name@institution.com"
-                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm outline-none w-full"
+                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm outline-none w-full"
                             aria-required="true"
                         />
                     </div>
-                    <div className="space-y-4">
+                    <div className="space-y-6">
                         <label
                             htmlFor="phone"
                             className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -143,18 +143,18 @@ export default function InquiryForm() {
                             id="phone"
                             type="tel"
                             placeholder="+1 212 555 0198"
-                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm outline-none w-full"
+                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm outline-none w-full"
                         />
                     </div>
                 </fieldset>
 
                 {/* Intent Selection */}
-                <fieldset className="space-y-6 border-0 p-0 m-0">
+                <fieldset className="space-y-8 border-0 p-0 m-0">
                     <legend className="text-[10px] font-bold uppercase tracking-widest text-primary/50">
                         Nature of Strategic Intent
                     </legend>
                     <div
-                        className="grid grid-cols-1 md:grid-cols-3 gap-6"
+                        className="grid grid-cols-1 md:grid-cols-3 gap-8"
                         role="radiogroup"
                         aria-label="Select engagement type"
                     >
@@ -165,7 +165,7 @@ export default function InquiryForm() {
                                 role="radio"
                                 aria-checked={selectedIntent === option.key}
                                 onClick={() => setSelectedIntent(option.key)}
-                                className={`border p-4 text-left transition-all ${selectedIntent === option.key
+                                className={`border p-6 text-left transition-all ${selectedIntent === option.key
                                     ? "border-primary bg-primary text-white"
                                     : "border-primary/10 hover:border-primary"
                                     }`}
@@ -173,7 +173,7 @@ export default function InquiryForm() {
                                 <span className="block text-[11px] font-bold uppercase tracking-tighter">
                                     {option.label}
                                 </span>
-                                <span className="block text-[9px] opacity-60 mt-1 uppercase">
+                                <span className="block text-[9px] opacity-60 mt-2 uppercase">
                                     {option.sub}
                                 </span>
                             </button>
@@ -182,7 +182,7 @@ export default function InquiryForm() {
                 </fieldset>
 
                 {/* Regional Focus */}
-                <div className="space-y-4">
+                <div className="space-y-6">
                     <label
                         htmlFor="region"
                         className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -191,7 +191,7 @@ export default function InquiryForm() {
                     </label>
                     <select
                         id="region"
-                        className="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm text-primary appearance-none cursor-pointer outline-none"
+                        className="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm text-primary appearance-none cursor-pointer outline-none"
                     >
                         <option value="">Select Operational Region</option>
                         <option value="emea">EMEA - Eurozone Focus</option>
@@ -206,7 +206,7 @@ export default function InquiryForm() {
                 </div>
 
                 {/* Inquiry Summary */}
-                <div className="space-y-4">
+                <div className="space-y-6">
                     <label
                         htmlFor="inquiry-summary"
                         className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -215,9 +215,9 @@ export default function InquiryForm() {
                     </label>
                     <textarea
                         id="inquiry-summary"
-                        rows={4}
+                        rows={5}
                         placeholder="Briefly outline the objective of the mandate..."
-                        className="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm placeholder:text-primary/20 resize-none outline-none transition-colors"
+                        className="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm placeholder:text-primary/20 resize-none outline-none transition-colors"
                         required
                         aria-required="true"
                     />
