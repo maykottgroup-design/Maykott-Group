@@ -205,7 +205,14 @@ export default function PortfolioPage() {
       >
         <div className="w-container max-w-none mx-auto px-0">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
-            <div className="lg:col-span-8">
+            <div className="lg:col-span-4 pb-4 order-2 lg:order-1">
+              <p className="text-slate-600 text-sm leading-relaxed font-light border-l border-accent-gold pl-6">
+                A premium legacy built on institutional stability, prestige, and
+                the pursuit of structural perfection across global industrial
+                ecosystems.
+              </p>
+            </div>
+            <div className="lg:col-span-8 order-1 lg:order-2 lg:text-right">
               <span className="text-accent-gold text-[10px] font-black uppercase tracking-[0.4em] mb-6 block">
                 Established Excellence
               </span>
@@ -213,7 +220,7 @@ export default function PortfolioPage() {
                 SHAPING THE <br /> ARCHITECTURAL <br /> FUTURE.
               </h1>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 lg:justify-end">
                 <button
                   onClick={() => {
                     document
@@ -232,13 +239,7 @@ export default function PortfolioPage() {
                 </Link>
               </div>
             </div>
-            <div className="lg:col-span-4 pb-4">
-              <p className="text-slate-600 text-sm leading-relaxed font-light border-l border-accent-gold pl-6">
-                A premium legacy built on institutional stability, prestige, and
-                the pursuit of structural perfection across global industrial
-                ecosystems.
-              </p>
-            </div>
+
           </div>
 
           {/* Hero Banner Image */}

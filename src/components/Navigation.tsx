@@ -88,9 +88,10 @@ export default function Navigation() {
                 href={link.href}
                 role="menuitem"
                 className={`transition-colors duration-200 hover:text-accent-gold relative pb-1 ${pathname === link.href
-                  ? "text-primary border-b-2 border-accent-gold"
+                  ? "text-accent-gold border-b-2 border-accent-gold"
                   : "text-primary"
                   }`}
+
               >
                 {link.label}
               </Link>
