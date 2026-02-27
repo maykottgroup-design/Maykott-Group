@@ -286,7 +286,7 @@ export default function PortfolioPage() {
       {/* ═══════════════════ HOLDINGS SECTION (WITH STICKY FILTER) ═══════════════════ */}
       <div className="relative">
         {/* ═══════════════════ FILTER BAR ═══════════════════ */}
-        <div className="sticky top-20 z-40 bg-white/90 backdrop-blur-md border-b border-primary/5 shadow-sm">
+        <div className="sticky top-16 md:top-20 z-40 bg-white/90 backdrop-blur-md border-b border-primary/5 shadow-sm">
           <div className="w-container max-w-none mx-auto px-0 md:px-0 px-6 h-20 flex items-center justify-between gap-4">
             {/* Sector Filters */}
             <div
