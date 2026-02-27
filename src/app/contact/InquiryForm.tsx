@@ -72,7 +72,7 @@ export default function InquiryForm() {
             </div>
 
             <form
-                className="space-y-24"
+                className="space-y-32"
                 onSubmit={handleSubmit}
                 noValidate
             >
