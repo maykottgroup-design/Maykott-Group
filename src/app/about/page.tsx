@@ -86,7 +86,8 @@ export default function AboutPage() {
           <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-8 block">
             Established Excellence
           </span>
-          <div className="flex flex-col md:flex-row justify-between items-end gap-12 mb-16">
+          <div className="flex flex-col md:flex-row justify-between items-end gap-12 mb-8">
+
             <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-none uppercase max-w-4xl text-white">
               Shaping the
               <br />
@@ -100,7 +101,8 @@ export default function AboutPage() {
               ecosystems.
             </p>
           </div>
-          <div className="flex gap-4 mb-20">
+          <div className="flex gap-4 mb-12 pt-4">
+
             <Link
               href="/portfolio"
               className="bg-off-white text-primary px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-accent-gold transition-colors"
@@ -401,7 +403,8 @@ export default function AboutPage() {
           </span>
         </div>
         <div className="w-container max-w-none mx-auto px-0 md:px-0 text-center relative z-10 w-full">
-          <h2 className="text-5xl md:text-8xl font-black tracking-tighter uppercase text-black leading-[0.9] mb-16">
+          <h2 className="text-5xl md:text-8xl font-black tracking-tighter uppercase text-black leading-[0.9] mb-10">
+
             LET&apos;S BUILD THE
             <br />
             FUTURE TOGETHER.
