@@ -72,7 +72,7 @@ export default function InquiryForm() {
             </div>
 
             <form
-                className="flex flex-col gap-8 md:gap-12"
+                className="flex flex-col gap-7 md:gap-10"
                 onSubmit={handleSubmit}
                 noValidate
             >
