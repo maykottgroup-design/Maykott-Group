@@ -123,7 +123,7 @@ export default function Navigation() {
                   }`}
               />
               <span
-                className={`absolute left-0 top-1/2 -translate-y-1/2 block h-0.5 bg-accent-gold transition-all duration-300 ${isMenuOpen ? "w-0 opacity-0" : "w-4 opacity-100"
+                className={`absolute left-0 top-1/2 -translate-y-1/2 block h-0.5 bg-primary transition-all duration-300 ${isMenuOpen ? "w-0 opacity-0" : "w-4 opacity-100"
                   }`}
               />
               <span

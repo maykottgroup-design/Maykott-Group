@@ -37,7 +37,8 @@ const regionalHQs = [
 export default function ContactPage() {
   return (
     <SiteLayout>
-      <main className="pt-16 pb-20 px-6">
+      <main className="pt-16 pb-20">
+
         <div className="w-container max-w-none mx-auto px-0 md:px-0">
           {/* ═══════════════════════════════════ HERO ═══════════════════════════════════ */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24 items-end">
@@ -117,16 +118,20 @@ export default function ContactPage() {
                   ].map((hub) => (
                     <div
                       key={hub.label}
-                      className="absolute pulse-dot"
+                      className="absolute flex items-center justify-center size-3"
                       style={{ top: hub.top, left: hub.left }}
                       title={hub.label}
                       aria-label={hub.label}
                     >
+                      {hub.active && (
+                        <span className="absolute inline-flex h-8 w-8 rounded-full bg-accent-gold opacity-30 animate-ping pointer-events-none" />
+                      )}
                       <div
-                        className={`size-3 rounded-full ${hub.active ? "bg-primary" : "bg-primary/50"
-                          } relative border-2 border-white shadow`}
+                        className={`relative inline-flex size-3 rounded-full ${hub.active ? "bg-primary" : "bg-primary/50"
+                          } border-2 border-white shadow`}
                       />
                     </div>
+
                   ))}
 
                   <div className="flex justify-between items-end">

@@ -31,9 +31,10 @@ export default function InsightsPage() {
       {/* ═══════════════════════════ HERO FEATURE ═══════════════════════════════ */}
       {featuredInsight && (
         <section
-          className="w-container max-w-none mx-auto px-0 md:px-0 px-6 py-12"
+          className="w-container mx-auto py-12 lg:py-16"
           aria-label="Featured Insight"
         >
+
           {/* Breadcrumb */}
           <nav
             className="flex items-center gap-2 mb-12"
@@ -111,7 +112,8 @@ export default function InsightsPage() {
       )}
 
       {/* ═══════════════════════════ FILTERS & REPOSITORY ════════════════════════ */}
-      <div className="w-container max-w-none mx-auto px-0 md:px-0 px-6">
+      <div className="w-container mx-auto">
+
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-primary pb-4 mb-12">
           <div>
             <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tighter">
