@@ -222,15 +222,15 @@ export default function InvestmentPage() {
 
       {/* ═══════════════════════════ SECTOR FOCUS ═══════════════════════════════ */}
       <section
-        className="py-24 border-b border-primary/10 bg-neutral-50"
+        className="py-24 border-b border-white/10 bg-primary"
         aria-label="Sector Focus Areas"
       >
         <div className="w-container max-w-none mx-auto px-0">
           <div className="text-center mb-16">
-            <span className="text-xs font-black uppercase tracking-[0.2em] text-primary/40 mb-4 block">
+            <span className="text-xs font-black uppercase tracking-[0.2em] text-accent-gold mb-4 block">
               Investment Universe
             </span>
-            <h2 className="text-4xl font-black uppercase tracking-tight text-primary">
+            <h2 className="text-4xl font-black uppercase tracking-tight text-white">
               Sector Focus Areas
             </h2>
           </div>
@@ -238,18 +238,18 @@ export default function InvestmentPage() {
             {sectorFocusAreas.map((area) => (
               <div
                 key={area.sector}
-                className="bg-white p-8 border border-primary/5 hover:border-accent-gold transition-colors group"
+                className="bg-[#1A1A1A] p-8 border border-white/5 hover:border-accent-gold transition-colors group"
               >
                 <span
-                  className="material-symbols-outlined text-3xl text-primary/30 group-hover:text-accent-gold transition-colors mb-4 block"
+                  className="material-symbols-outlined text-3xl text-white/30 group-hover:text-accent-gold transition-colors mb-4 block"
                   aria-hidden="true"
                 >
                   {area.icon}
                 </span>
-                <h3 className="font-black uppercase text-lg tracking-tight mb-2">
+                <h3 className="font-black uppercase text-lg tracking-tight mb-2 text-white">
                   {area.sector}
                 </h3>
-                <p className="text-sm text-slate-500 uppercase tracking-widest font-bold text-[10px]">
+                <p className="text-white/50 uppercase tracking-widest font-bold text-[10px]">
                   {area.examples}
                 </p>
               </div>
