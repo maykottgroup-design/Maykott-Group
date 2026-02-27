@@ -79,7 +79,7 @@ export default function InquiryForm() {
                 {/* Principal Fields */}
                 <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-20 border-0 p-0 m-0">
                     <legend className="sr-only">Principal Information</legend>
-                    <div className="space-y-6">
+                    <div className="space-y-10">
                         <label
                             htmlFor="full-name"
                             className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -95,7 +95,7 @@ export default function InquiryForm() {
                             aria-required="true"
                         />
                     </div>
-                    <div className="space-y-6">
+                    <div className="space-y-10">
                         <label
                             htmlFor="organization"
                             className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -116,7 +116,7 @@ export default function InquiryForm() {
                 {/* Email & Phone */}
                 <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-20 border-0 p-0 m-0">
                     <legend className="sr-only">Contact Information</legend>
-                    <div className="space-y-6">
+                    <div className="space-y-10">
                         <label
                             htmlFor="email"
                             className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -132,7 +132,7 @@ export default function InquiryForm() {
                             aria-required="true"
                         />
                     </div>
-                    <div className="space-y-6">
+                    <div className="space-y-10">
                         <label
                             htmlFor="phone"
                             className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -182,7 +182,7 @@ export default function InquiryForm() {
                 </fieldset>
 
                 {/* Regional Focus */}
-                <div className="space-y-6">
+                <div className="space-y-10">
                     <label
                         htmlFor="region"
                         className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
@@ -206,7 +206,7 @@ export default function InquiryForm() {
                 </div>
 
                 {/* Inquiry Summary */}
-                <div className="space-y-6">
+                <div className="space-y-10">
                     <label
                         htmlFor="inquiry-summary"
                         className="text-[10px] font-bold uppercase tracking-widest text-primary/50 block"
