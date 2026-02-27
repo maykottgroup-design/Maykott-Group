@@ -24,7 +24,8 @@ export default function SubsidiaryDetailPage() {
                         src={subsidiary.imageUrl}
                         alt={subsidiary.imageAlt}
                         fill
-                        className="object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000"
+                        className="object-cover opacity-60 transition-all duration-1000"
+
                         priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent" />

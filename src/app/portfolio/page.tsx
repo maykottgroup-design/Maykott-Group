@@ -72,7 +72,8 @@ function SubsidiaryCard({ subsidiary }: { subsidiary: Subsidiary }) {
           src={subsidiary.imageUrl}
           alt={subsidiary.imageAlt}
           fill
-          className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 opacity-80"
+          className="object-cover group-hover:scale-110 transition-all duration-700"
+
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {subsidiary.badge && (
@@ -216,9 +217,10 @@ export default function PortfolioPage() {
               <span className="text-accent-gold text-[10px] font-black uppercase tracking-[0.4em] mb-6 block">
                 Established Excellence
               </span>
-              <h1 className="text-4xl md:text-8xl font-black text-primary tracking-tighter leading-[0.9] mb-8 uppercase">
+              <h1 className="text-[12vw] sm:text-[10vw] md:text-8xl font-black text-primary tracking-tighter leading-[0.9] mb-8 uppercase">
                 SHAPING THE <br /> ARCHITECTURAL <br /> FUTURE.
               </h1>
+
 
               <div className="flex flex-wrap gap-4 lg:justify-end">
                 <button
@@ -248,7 +250,8 @@ export default function PortfolioPage() {
               src="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop"
               alt="Maykott Group portfolio companies — global industrial architecture"
               fill
-              className="object-cover grayscale"
+              className="object-cover"
+
               priority
               sizes="100vw"
             />

@@ -119,7 +119,8 @@ export default function AboutPage() {
               alt="Maykott Group Global Headquarters — modern architectural interior"
               width={2069}
               height={888}
-              className="w-full h-full object-cover grayscale"
+              className="w-full h-full object-cover"
+
               priority
             />
           </div>
@@ -192,7 +193,8 @@ export default function AboutPage() {
                 alt="Maykott Group - Strategic corporate headquarters interior"
                 width={800}
                 height={800}
-                className="w-full aspect-square object-cover grayscale"
+                className="w-full aspect-square object-cover"
+
               />
               <div className="absolute -bottom-8 -left-8 bg-primary p-10 border border-white/10 shadow-2xl">
                 <h3 className="text-4xl font-bold text-accent-gold">$50B</h3>
@@ -346,7 +348,8 @@ export default function AboutPage() {
                   alt={leader.imageAlt}
                   width={200}
                   height={250}
-                  className="w-44 h-56 object-cover grayscale hover:grayscale-0 transition-all flex-shrink-0"
+                  className="w-44 h-56 object-cover hover:scale-105 transition-all flex-shrink-0"
+
                 />
                 <div>
                   <h3 className="text-2xl font-bold uppercase text-white">

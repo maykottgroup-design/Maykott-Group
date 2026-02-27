@@ -193,14 +193,12 @@ export default function InvestmentPage() {
             {acquisitionCriteria.map((criteria) => (
               <div
                 key={criteria.title}
-                className={`p-10 border-b md:border-b-0 md:border-r border-primary flex flex-col gap-8 last:border-r-0 last:border-b-0 ${
-                  criteria.highlighted ? "bg-primary text-white" : ""
-                }`}
+                className={`p-10 border-b md:border-b-0 md:border-r border-primary flex flex-col gap-8 last:border-r-0 last:border-b-0 ${criteria.highlighted ? "bg-primary text-white" : ""
+                  }`}
               >
                 <span
-                  className={`material-symbols-outlined text-5xl ${
-                    criteria.highlighted ? "text-white" : "text-primary"
-                  }`}
+                  className={`material-symbols-outlined text-5xl ${criteria.highlighted ? "text-white" : "text-primary"
+                    }`}
                   aria-hidden="true"
                 >
                   {criteria.icon}
@@ -305,7 +303,8 @@ export default function InvestmentPage() {
         aria-hidden="true"
       >
         <div
-          className="absolute inset-0 grayscale opacity-30 bg-cover bg-center"
+          className="absolute inset-0 opacity-30 bg-cover bg-center"
+
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop')",

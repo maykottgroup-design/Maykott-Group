@@ -161,7 +161,8 @@ export default function InsightsPage() {
                     src={insight.imageUrl}
                     alt={insight.imageAlt}
                     fill
-                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                    className="object-cover group-hover:scale-110 transition-all duration-700"
+
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -234,7 +235,8 @@ export default function InsightsPage() {
                 alt="Arthur Maykott - Managing Director"
                 width={64}
                 height={64}
-                className="grayscale border border-white/20 object-cover size-16"
+                className="border border-white/20 object-cover size-16"
+
               />
               <div>
                 <p className="font-bold text-lg leading-none uppercase tracking-tighter">

@@ -69,7 +69,8 @@ export default function InsightDetailPage() {
                         src={insight.imageUrl}
                         alt={insight.imageAlt}
                         fill
-                        className="object-cover grayscale"
+                        className="object-cover"
+
                         priority
                     />
                 </figure>

@@ -36,11 +36,12 @@ export default function HomePage() {
               <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-8 animate-fade-in">
                 Established Excellence
               </p>
-              <h1 className="text-5xl sm:text-7xl md:text-[8rem] lg:text-[10rem] xl:text-[12rem] font-black tracking-tighter leading-[0.8] uppercase animate-slide-up flex flex-col">
+              <h1 className="text-[12vw] sm:text-[10vw] md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.9] uppercase animate-slide-up flex flex-col break-words">
                 <span>Shaping The</span>
                 <span>Architectural</span>
                 <span>Future.</span>
               </h1>
+
 
             </div>
 
@@ -217,7 +218,7 @@ export default function HomePage() {
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
                 <div className="absolute bottom-0 p-10 w-full">
                   <span className="text-accent-gold text-[10px] font-bold uppercase tracking-widest mb-2 block">
                     {subsidiary.sectorLabel}
@@ -422,7 +423,7 @@ export default function HomePage() {
                   className="object-cover group-hover:scale-105 transition-all duration-700"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
                 <div className="absolute bottom-0 p-8 w-full">
                   <h3 className="text-white text-xl font-black uppercase tracking-tighter">
                     {leader.name}
