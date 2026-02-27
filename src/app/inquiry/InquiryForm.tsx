@@ -303,10 +303,10 @@ export default function InquiryForm() {
                     <button
                         type="submit"
                         disabled={isLoading}
-                        className="flex items-center gap-4 group transition-all duration-300 disabled:opacity-50 rounded-sm bg-black text-white px-8 py-3.5 text-xs font-bold uppercase tracking-[0.15em] hover:bg-accent-gold hover:text-black hover:shadow-lg"
+                        className="flex items-center justify-between gap-4 group transition-all duration-300 disabled:opacity-50 bg-black text-white px-10 py-5 hover:bg-accent-gold hover:text-black"
                         aria-label="Submit inquiry"
                     >
-                        <span className="text-[11px] font-bold uppercase tracking-[0.2em] group-hover:tracking-[0.3em] transition-all">
+                        <span className="text-[10px] font-black uppercase tracking-[0.2em] transition-all">
                             {isLoading ? "Initiating..." : "Initiate Protocol"}
                         </span>
                         <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform" aria-hidden="true">

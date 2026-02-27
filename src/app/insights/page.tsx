@@ -120,7 +120,7 @@ export default function InsightsPage() {
               Intelligence Repository
             </h2>
 
-            <p className="text-sm font-medium text-primary/40 mt-1 uppercase tracking-widest">
+            <p className="text-sm font-medium text-primary/40 mt-1 uppercase tracking-wider">
               Curated data &amp; analysis for sovereign funds
             </p>
           </div>

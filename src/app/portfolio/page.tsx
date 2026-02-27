@@ -405,7 +405,7 @@ export default function PortfolioPage() {
               <div className="flex flex-wrap gap-6">
                 <Link
                   href="/investment"
-                  className="gold-gradient-border px-10 py-4 text-[11px] font-black uppercase tracking-[0.3em] text-white hover:bg-accent-gold hover:text-primary transition-all"
+                  className="bg-accent-gold text-black px-10 py-4 text-[11px] font-black uppercase tracking-[0.3em] hover:bg-white transition-all"
                 >
                   Investment Prospectus
                 </Link>
