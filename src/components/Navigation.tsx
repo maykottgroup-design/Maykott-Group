@@ -110,16 +110,26 @@ export default function Navigation() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden text-primary p-2"
+            className="md:hidden flex flex-col items-center justify-center p-2 w-10 h-10 gap-1.5 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
-            <span className="material-symbols-outlined">
-              {isMenuOpen ? "close" : "menu"}
-            </span>
+            <span
+              className={`block w-6 h-0.5 bg-primary transition-all duration-300 transform origin-center ${isMenuOpen ? "rotate-45 translate-y-2" : ""
+                }`}
+            />
+            <span
+              className={`block w-6 h-0.5 bg-primary transition-all duration-300 ${isMenuOpen ? "opacity-0" : "opacity-100"
+                }`}
+            />
+            <span
+              className={`block w-6 h-0.5 bg-primary transition-all duration-300 transform origin-center ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                }`}
+            />
           </button>
+
         </div>
 
         {/* Mobile Menu */}
