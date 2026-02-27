@@ -48,33 +48,17 @@ export default function Footer() {
                 Maykott <span className="text-accent-gold">Group</span>
               </span>
             </Link>
-            <p className="text-white/70 max-w-sm text-sm leading-relaxed mb-8">
-              Architectural rigor in global B2B expansion. We build the
-              frameworks of the next industrial era.
-            </p>
-            <div className="flex gap-6">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-accent-gold transition-colors"
-                aria-label="Maykott Group on LinkedIn"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="#"
-                className="text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-accent-gold transition-colors"
-              >
-                Twitter / X
-              </a>
-              <a
-                href="#"
-                className="text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-accent-gold transition-colors"
-              >
-                Bloomberg
-              </a>
+            <div className="text-white/70 max-w-sm text-xs md:text-sm leading-relaxed mb-6 font-medium tracking-wide">
+              <p className="mb-4">
+                2800 OAKVILLE HIGHWAY, SUITE 4200, CENTERVILLE, OAK.
+              </p>
+              <p className="mb-2">
+                EXACT PROPRIETARY MATRIX OF THE &quot;NEXT&quot; INDUSTRIAL ERA.
+              </p>
             </div>
+            <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">
+              Firm ID: MK-00192-G
+            </p>
           </div>
 
           {/* Navigation */}
@@ -118,24 +102,25 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <span className="text-[10px] font-bold uppercase tracking-widest text-white/30">
-            © {currentYear} Maykott Industrial Holding Group. All Rights
-            Reserved.
+          <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-white/30 text-center md:text-left">
+            © {currentYear} MAYKOTT INDUSTRIAL HOLDING GROUP INC. ALL RIGHTS
+            RESERVED.
           </span>
-          <div className="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-white/30">
-            <Link
-              href="/privacy"
-              className="hover:text-white/60 transition-colors"
+          <div className="flex gap-6 text-white/40">
+            <a
+              href="#"
+              aria-label="Share"
+              className="hover:text-accent-gold transition-colors"
             >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="hover:text-white/60 transition-colors"
+              <span className="material-symbols-outlined text-sm">share</span>
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="hover:text-accent-gold transition-colors"
             >
-              Terms of Operations
-            </Link>
-            <span>Firm ID: MK-00192-G</span>
+              <span className="material-symbols-outlined text-sm">public</span>
+            </a>
           </div>
         </div>
       </div>

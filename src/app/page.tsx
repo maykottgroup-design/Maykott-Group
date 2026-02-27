@@ -26,33 +26,32 @@ export default function HomePage() {
     <SiteLayout>
       {/* ═══════════════════════════════════ HERO ═══════════════════════════════════ */}
       <section
-        className="relative flex flex-col bg-background-light overflow-hidden"
+        className="relative flex flex-col bg-background-light overflow-hidden pt-20"
         aria-label="Hero section"
       >
         <div className="w-container max-w-none mx-auto px-0 pb-20 pt-12">
           {/* Headline & Text */}
-          <div className="mb-12 flex flex-col lg:flex-row lg:justify-between lg:items-end gap-10">
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-6 animate-fade-in">
+          <div className="mb-16 flex flex-col lg:flex-row lg:justify-between lg:items-end gap-12">
+            <div className="max-w-4xl">
+              <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-8 animate-fade-in">
                 Established Excellence
               </p>
-              <h1 className="text-6xl md:text-8xl lg:text-[11.5rem] font-black tracking-tighter leading-[0.85] uppercase animate-slide-up flex flex-col">
+              <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-[0.85] uppercase animate-slide-up flex flex-col">
                 <span>Shaping The</span>
-                <span className="text-gold-gradient">Architectural</span>
+                <span>Architectural</span>
                 <span>Future.</span>
               </h1>
             </div>
-            <div className="lg:max-w-sm xl:max-w-md pb-4 animate-fade-in">
-              <p className="text-primary/70 text-lg leading-relaxed font-medium">
-                A global B2B industrial holding company deploying capital with
-                architectural precision across infrastructure, technology,
-                energy, and logistics.
+            <div className="lg:max-w-sm xl:max-w-md pb-6 animate-fade-in">
+              <p className="text-primary/70 text-lg leading-relaxed font-medium border-l border-accent-gold/30 pl-8">
+                A premium legacy built on institutional stability, prestige, and
+                the pursuit of structural perfection.
               </p>
             </div>
           </div>
 
           {/* Hero Image */}
-          <div className="relative w-full overflow-hidden aspect-[21/9] group mb-8">
+          <div className="relative w-full overflow-hidden aspect-[21/9] group mb-12 shadow-2xl">
             <Image
               src="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop"
               alt="Maykott Group - Modern architectural structure representing precision and scale"
@@ -65,10 +64,10 @@ export default function HomePage() {
           </div>
 
           {/* Hero Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-6">
             <Link
               href="/portfolio"
-              className="bg-black text-white px-10 py-5 text-xs font-bold uppercase tracking-[0.15em] hover:bg-accent-gold hover:text-white transition-all duration-300 flex items-center justify-center gap-3 group"
+              className="bg-black text-white px-10 py-5 text-xs font-black uppercase tracking-[0.2em] hover:bg-accent-gold hover:text-white transition-all duration-300 flex items-center justify-center gap-3 group"
             >
               Explore Portfolio
               <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">
@@ -77,7 +76,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/contact"
-              className="bg-transparent border border-black text-black px-10 py-5 text-xs font-bold uppercase tracking-[0.15em] hover:bg-black hover:text-white transition-all duration-300 text-center"
+              className="bg-transparent border border-black text-black px-10 py-5 text-xs font-black uppercase tracking-[0.2em] hover:bg-black hover:text-white transition-all duration-300 text-center"
             >
               Partner With Us
             </Link>
@@ -202,7 +201,7 @@ export default function HomePage() {
             {featuredSubsidiaries.map((subsidiary) => (
               <Link
                 key={subsidiary.id}
-                href={`/portfolio#${subsidiary.id}`}
+                href={`/portfolio/${subsidiary.id}`}
                 className="group relative aspect-[3/4] overflow-hidden bg-primary block"
                 aria-label={`${subsidiary.name} - ${subsidiary.sectorLabel}`}
               >
@@ -273,7 +272,7 @@ export default function HomePage() {
               </p>
               <div className="space-y-6">
                 {[
-                  { label: "Revenue Threshold", value: "$50M – $500M" },
+                  { label: "AVERAGE TICKET SIZE", value: "$50M - $150M" },
                   { label: "EBITDA Margin", value: "15% – 25%" },
                   { label: "Global Footprint", value: "Multi-Region" },
                 ].map((criterion) => (
@@ -367,12 +366,13 @@ export default function HomePage() {
             ))}
 
             {/* Info Callout */}
-            <div className="absolute bottom-10 left-10 bg-primary p-6 text-white max-w-xs shadow-2xl">
+            <div className="absolute bottom-10 left-10 bg-primary p-6 text-white max-w-sm shadow-2xl">
               <h5 className="font-black uppercase text-xl mb-2">
-                32 Hubs Worldwide
+                50+ HUBS WORLDWIDE
               </h5>
               <p className="text-xs text-white/60 tracking-widest uppercase">
-                London • New York • Singapore • Dubai • Tokyo • Berlin
+                5 CONTINENTS. 12 KEY CITIES. 1 CORE MISSION: UNIFIED INDUSTRIAL
+                GROWTH.
               </p>
             </div>
           </div>
@@ -392,8 +392,8 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="text-white/50 max-w-sm uppercase text-xs tracking-widest leading-relaxed">
-              Our executive team brings over a century of combined experience in
-              global industrial management and private equity.
+              OUR EXECUTIVE COMMITTED TO THE OPERATIONALIZATION OF A GLOBAL
+              INDUSTRIAL MACROTHESIS. WE BUILD. WE SCALE.
             </p>
           </div>
 
@@ -464,7 +464,7 @@ export default function HomePage() {
               href="mailto:inquiry@maykott.com"
               className="text-xs font-bold uppercase tracking-[0.15em] border-b-2 border-primary pb-1 hover:border-accent-gold hover:text-accent-gold transition-colors"
             >
-              Direct Inquiry
+              Get In Touch
             </a>
           </div>
         </div>

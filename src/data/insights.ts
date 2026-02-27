@@ -11,12 +11,12 @@ export interface Insight {
   title: string;
   excerpt: string;
   sector:
-    | "energy"
-    | "logistics"
-    | "finance"
-    | "technology"
-    | "infrastructure"
-    | "decarbonization";
+  | "energy"
+  | "logistics"
+  | "finance"
+  | "technology"
+  | "infrastructure"
+  | "decarbonization";
   sectorLabel: string;
   readTime: string; // e.g. "12 MIN READ"
   publishedAt: string; // ISO date string
@@ -153,4 +153,10 @@ export function getInsightsList(): Insight[] {
 export function getInsightsBySector(sector: string): Insight[] {
   if (sector === "all") return insights;
   return insights.filter((i) => i.sector === sector);
+}
+/**
+ * Get insight by ID.
+ */
+export function getInsightById(id: string): Insight | undefined {
+  return insights.find((i) => i.id === id);
 }

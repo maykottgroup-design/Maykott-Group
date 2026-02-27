@@ -113,7 +113,7 @@ export default function AboutPage() {
               Direct Inquiry
             </Link>
           </div>
-          <div className="w-full aspect-[21/9] overflow-hidden">
+          <div className="w-full aspect-[21/7] overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
               alt="Maykott Group Global Headquarters — modern architectural interior"
@@ -223,9 +223,8 @@ export default function AboutPage() {
             {titanFramework.map((item, i) => (
               <article
                 key={item.title}
-                className={`p-12 border-r border-white/5 last:border-r-0 ${
-                  i === 1 ? "bg-background-dark" : "bg-[#1A1A1A]"
-                }`}
+                className={`p-12 border-r border-white/5 last:border-r-0 ${i === 1 ? "bg-background-dark" : "bg-[#1A1A1A]"
+                  }`}
               >
                 <span
                   className="material-symbols-outlined text-accent-gold text-4xl mb-8 block"
@@ -280,14 +279,12 @@ export default function AboutPage() {
               {milestones.map((milestone, i) => (
                 <div
                   key={milestone.year}
-                  className={`flex flex-col md:flex-row items-center ${
-                    i % 2 === 0 ? "" : "md:flex-row-reverse"
-                  }`}
+                  className={`flex flex-col md:flex-row items-center ${i % 2 === 0 ? "" : "md:flex-row-reverse"
+                    }`}
                 >
                   <div
-                    className={`flex-1 ${
-                      i % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"
-                    } mb-8 md:mb-0`}
+                    className={`flex-1 ${i % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"
+                      } mb-8 md:mb-0`}
                   >
                     <div className="bg-white p-8 md:p-10 border border-black/5 shadow-sm hover:shadow-md transition-shadow">
                       <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-2 block">
@@ -309,11 +306,9 @@ export default function AboutPage() {
                   />
 
                   <div
-                    className={`flex-1 ${
-                      i % 2 === 0 ? "md:pl-16" : "md:pr-16"
-                    } hidden md:flex items-center ${
-                      i % 2 === 0 ? "" : "justify-end"
-                    }`}
+                    className={`flex-1 ${i % 2 === 0 ? "md:pl-16" : "md:pr-16"
+                      } hidden md:flex items-center ${i % 2 === 0 ? "" : "justify-end"
+                      }`}
                   >
                     <span className="text-9xl font-black text-primary/5 select-none">
                       {String(i + 1).padStart(2, "0")}

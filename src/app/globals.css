@@ -42,7 +42,6 @@
 }
 
 @layer utilities {
-
   /* Layout */
   .w-container {
     width: 94%;
@@ -77,8 +76,11 @@
   .gold-gradient-border {
     border: 1px solid transparent;
     background:
-      linear-gradient(var(--color-background-light),
-        var(--color-background-light)) padding-box,
+      linear-gradient(
+          var(--color-background-light),
+          var(--color-background-light)
+        )
+        padding-box,
       linear-gradient(to right, #c5a859, #e2c990) border-box;
   }
 
@@ -161,7 +163,6 @@
 }
 
 @keyframes ping {
-
   75%,
   100% {
     transform: translate(-50%, -50%) scale(2);

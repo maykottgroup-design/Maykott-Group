@@ -14,7 +14,7 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/investment", label: "Investment" },
   { href: "/insights", label: "Insights" },
-  { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Inquiry" },
 ];
 
 export default function Navigation() {
@@ -39,11 +39,10 @@ export default function Navigation() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-          isScrolled
+        className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled
             ? "bg-white/95 backdrop-blur-md border-b border-primary/10 shadow-sm"
             : "bg-background-light/90 backdrop-blur-sm border-b border-primary/5"
-        }`}
+          }`}
         role="navigation"
         aria-label="Main navigation"
       >
@@ -83,11 +82,10 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 role="menuitem"
-                className={`transition-colors duration-200 hover:text-accent-gold relative pb-1 ${
-                  pathname === link.href
+                className={`transition-colors duration-200 hover:text-accent-gold relative pb-1 ${pathname === link.href
                     ? "text-primary border-b-2 border-accent-gold"
                     : "text-primary"
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -131,11 +129,10 @@ export default function Navigation() {
                   key={link.href}
                   href={link.href}
                   role="menuitem"
-                  className={`text-sm font-bold uppercase tracking-widest transition-colors duration-200 ${
-                    pathname === link.href
+                  className={`text-sm font-bold uppercase tracking-widest transition-colors duration-200 ${pathname === link.href
                       ? "text-accent-gold"
                       : "text-primary hover:text-accent-gold"
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </Link>

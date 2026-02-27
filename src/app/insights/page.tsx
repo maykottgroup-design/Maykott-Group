@@ -83,7 +83,10 @@ export default function InsightsPage() {
                 {featuredInsight.excerpt}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-black text-white px-8 py-4 font-bold text-sm flex items-center justify-between group hover:bg-accent-gold transition-all">
+                <Link
+                  href={`/insights/${featuredInsight.id}`}
+                  className="bg-black text-white px-8 py-4 font-bold text-sm flex items-center justify-between group hover:bg-accent-gold transition-all"
+                >
                   <span className="uppercase tracking-widest">
                     Access Report
                   </span>
@@ -93,10 +96,13 @@ export default function InsightsPage() {
                   >
                     arrow_forward
                   </span>
-                </button>
-                <button className="border border-primary/20 hover:border-primary px-8 py-4 font-bold text-sm uppercase tracking-widest transition-colors">
+                </Link>
+                <Link
+                  href={`/insights/${featuredInsight.id}`}
+                  className="border border-primary/20 hover:border-primary px-8 py-4 font-bold text-sm uppercase tracking-widest transition-colors text-center"
+                >
                   Executive Summary
-                </button>
+                </Link>
               </div>
             </div>
           </article>
@@ -125,11 +131,10 @@ export default function InsightsPage() {
                 role="tab"
                 aria-selected={activeFilter === filter.key}
                 onClick={() => setActiveFilter(filter.key)}
-                className={`whitespace-nowrap text-[11px] font-extrabold uppercase tracking-widest px-1 pb-1 transition-colors ${
-                  activeFilter === filter.key
+                className={`whitespace-nowrap text-[11px] font-extrabold uppercase tracking-widest px-1 pb-1 transition-colors ${activeFilter === filter.key
                     ? "border-b-2 border-primary text-primary"
                     : "text-primary/30 hover:text-primary"
-                }`}
+                  }`}
               >
                 {filter.label}
               </button>
@@ -144,48 +149,49 @@ export default function InsightsPage() {
         >
           {filteredInsights.length > 0 ? (
             filteredInsights.map((insight) => (
-              <article key={insight.id} className="group cursor-pointer">
+              <Link
+                href={`/insights/${insight.id}`}
+                key={insight.id}
+                className="group cursor-pointer block"
+              >
                 <div className="aspect-[16/9] bg-primary/5 overflow-hidden border border-primary/5 mb-6 relative">
                   <Image
                     src={insight.imageUrl}
                     alt={insight.imageAlt}
                     fill
-                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
-                <div className="flex items-center gap-3 mb-3 text-[10px] font-black uppercase tracking-tighter">
-                  <span className="text-primary">{insight.sectorLabel}</span>
-                  <span className="text-primary/20" aria-hidden="true">
-                    •
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-accent-gold">
+                    {insight.sectorLabel}
                   </span>
-                  <span className="text-primary/40">{insight.readTime}</span>
+                  <span className="w-1 h-1 bg-primary/20 rounded-full"></span>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-primary/30">
+                    {insight.readTime}
+                  </span>
                 </div>
-                <h3 className="text-xl font-bold leading-tight mb-4 group-hover:underline decoration-1 underline-offset-4">
+                <h3 className="text-xl font-black uppercase tracking-tight leading-tight group-hover:text-accent-gold transition-colors mb-4">
                   {insight.title}
                 </h3>
-                <p className="text-sm text-primary/60 font-medium leading-relaxed mb-6 line-clamp-3">
+                <p className="text-sm text-primary/60 leading-relaxed line-clamp-2 italic mb-6">
                   {insight.excerpt}
                 </p>
-                <div className="flex items-center justify-between">
-                  <div className="text-[10px] text-primary/40 font-bold uppercase tracking-widest">
-                    By {insight.author}
-                  </div>
-                  <a
-                    href="#"
-                    className="text-[11px] font-black uppercase tracking-widest flex items-center gap-2 hover:text-accent-gold transition-colors"
-                    aria-label={`Read: ${insight.title}`}
-                  >
-                    Access Intelligence
-                    <span
-                      className="material-symbols-outlined text-sm"
-                      aria-hidden="true"
-                    >
-                      north_east
+                <div className="flex items-center justify-between pt-6 border-t border-primary/5">
+                  <div className="flex items-center gap-2">
+                    <div className="size-6 bg-primary rounded-full flex items-center justify-center text-white text-[10px] font-black">
+                      {insight.author.charAt(0)}
+                    </div>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-primary/60">
+                      {insight.author}
                     </span>
-                  </a>
+                  </div>
+                  <span className="material-symbols-outlined text-primary/20 group-hover:text-accent-gold group-hover:translate-x-1 transition-all">
+                    trending_flat
+                  </span>
                 </div>
-              </article>
+              </Link>
             ))
           ) : (
             <div className="col-span-3 text-center py-16">

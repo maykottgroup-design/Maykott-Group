@@ -49,9 +49,8 @@ function SparklineChart({ trend }: { trend: number[] }) {
         return (
           <div
             key={i}
-            className={`w-2 ${heightMap[val] || "h-2"} ${
-              isRecent ? "bg-accent-gold" : "bg-slate-200"
-            }`}
+            className={`w-2 ${heightMap[val] || "h-2"} ${isRecent ? "bg-accent-gold" : "bg-slate-200"
+              }`}
           />
         );
       })}
@@ -68,7 +67,7 @@ function SubsidiaryCard({ subsidiary }: { subsidiary: Subsidiary }) {
       id={subsidiary.id}
       className="group bg-white border border-primary/5 overflow-hidden titan-shadow hover:border-accent-gold transition-all duration-500"
     >
-      <div className="relative h-48 overflow-hidden bg-primary">
+      <Link href={`/portfolio/${subsidiary.id}`} className="relative h-48 overflow-hidden bg-primary block">
         <Image
           src={subsidiary.imageUrl}
           alt={subsidiary.imageAlt}
@@ -78,27 +77,26 @@ function SubsidiaryCard({ subsidiary }: { subsidiary: Subsidiary }) {
         />
         {subsidiary.badge && (
           <div
-            className={`absolute top-4 right-4 text-[9px] font-black uppercase px-2 py-1 tracking-tighter ${
-              subsidiary.badgeVariant === "gold"
-                ? "bg-accent-gold text-primary"
-                : "bg-black text-white"
-            }`}
+            className={`absolute top-4 right-4 text-[9px] font-black uppercase px-2 py-1 tracking-tighter ${subsidiary.badgeVariant === "gold"
+              ? "bg-accent-gold text-primary"
+              : "bg-black text-white"
+              }`}
           >
             {subsidiary.badge}
           </div>
         )}
-      </div>
+      </Link>
 
       <div className="p-8">
         <div className="flex justify-between items-start mb-6">
-          <div>
+          <Link href={`/portfolio/${subsidiary.id}`}>
             <h3 className="text-xl font-black uppercase tracking-tight group-hover:text-accent-gold transition-colors">
               {subsidiary.name}
             </h3>
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">
               {subsidiary.sectorLabel}
             </p>
-          </div>
+          </Link>
           <span
             className="material-symbols-outlined text-slate-300 group-hover:text-accent-gold transition-colors"
             aria-hidden="true"
@@ -138,7 +136,7 @@ function SubsidiaryCard({ subsidiary }: { subsidiary: Subsidiary }) {
             </span>
           </div>
           <Link
-            href={`/contact?subject=Portfolio Inquiry: ${subsidiary.name}`}
+            href={`/portfolio/${subsidiary.id}`}
             className="text-[10px] font-black uppercase tracking-[0.2em] border-b border-primary/20 pb-0.5 hover:border-accent-gold hover:text-accent-gold transition-colors"
           >
             Details
@@ -278,105 +276,106 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ FILTER BAR ═══════════════════ */}
-      <div className="sticky top-20 z-40 bg-white/90 backdrop-blur-md border-b border-primary/5 shadow-sm">
-        <div className="w-container max-w-none mx-auto px-0 md:px-0 px-6 h-20 flex items-center justify-between gap-4">
-          {/* Sector Filters */}
-          <div
-            className="flex items-center gap-4 md:gap-8 overflow-x-auto hide-scrollbar"
-            role="tablist"
-            aria-label="Filter portfolio by sector"
-          >
-            {sectorFilters.map((filter) => (
-              <button
-                key={filter.key}
-                role="tab"
-                aria-selected={activeFilter === filter.key}
-                onClick={() => setActiveFilter(filter.key)}
-                className={`flex items-center gap-2 whitespace-nowrap text-[11px] font-bold uppercase tracking-widest transition-colors pb-1 ${
-                  activeFilter === filter.key
+      {/* ═══════════════════ HOLDINGS SECTION (WITH STICKY FILTER) ═══════════════════ */}
+      <div className="relative">
+        {/* ═══════════════════ FILTER BAR ═══════════════════ */}
+        <div className="sticky top-20 z-40 bg-white/90 backdrop-blur-md border-b border-primary/5 shadow-sm">
+          <div className="w-container max-w-none mx-auto px-0 md:px-0 px-6 h-20 flex items-center justify-between gap-4">
+            {/* Sector Filters */}
+            <div
+              className="flex items-center gap-4 md:gap-8 overflow-x-auto hide-scrollbar"
+              role="tablist"
+              aria-label="Filter portfolio by sector"
+            >
+              {sectorFilters.map((filter) => (
+                <button
+                  key={filter.key}
+                  role="tab"
+                  aria-selected={activeFilter === filter.key}
+                  onClick={() => setActiveFilter(filter.key)}
+                  className={`flex items-center gap-2 whitespace-nowrap text-[11px] font-bold uppercase tracking-widest transition-colors pb-1 ${activeFilter === filter.key
                     ? "border-b-2 border-primary text-primary"
                     : "text-slate-400 hover:text-primary"
-                }`}
-              >
-                {filter.label}
-                <span
-                  className={`text-[10px] px-1.5 py-0.5 ${
-                    activeFilter === filter.key
+                    }`}
+                >
+                  {filter.label}
+                  <span
+                    className={`text-[10px] px-1.5 py-0.5 ${activeFilter === filter.key
                       ? "bg-black text-white"
                       : "bg-slate-100 text-slate-500"
-                  }`}
-                >
-                  {filter.count}
-                </span>
-              </button>
-            ))}
-          </div>
+                      }`}
+                  >
+                    {filter.count}
+                  </span>
+                </button>
+              ))}
+            </div>
 
-          {/* Search */}
-          <div className="hidden md:flex items-center bg-slate-100 px-4 py-2 w-64 gap-2">
-            <span
-              className="material-symbols-outlined text-slate-400 text-sm"
-              aria-hidden="true"
-            >
-              search
-            </span>
-            <input
-              type="text"
-              placeholder="SEARCH SUBSIDIARIES..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="bg-transparent border-none focus:ring-0 text-[10px] font-bold tracking-widest placeholder:text-slate-400 w-full outline-none"
-              aria-label="Search portfolio subsidiaries"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery("")}
-                aria-label="Clear search"
-                className="text-slate-400 hover:text-primary"
+            {/* Search */}
+            <div className="hidden md:flex items-center bg-slate-100 px-4 py-2 w-64 gap-2">
+              <span
+                className="material-symbols-outlined text-slate-400 text-sm"
+                aria-hidden="true"
               >
-                <span className="material-symbols-outlined text-sm">close</span>
-              </button>
-            )}
+                search
+              </span>
+              <input
+                type="text"
+                placeholder="SEARCH SUBSIDIARIES..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="bg-transparent border-none focus:ring-0 text-[10px] font-bold tracking-widest placeholder:text-slate-400 w-full outline-none"
+                aria-label="Search portfolio subsidiaries"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  aria-label="Clear search"
+                  className="text-slate-400 hover:text-primary"
+                >
+                  <span className="material-symbols-outlined text-sm">close</span>
+                </button>
+              )}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* ═══════════════════ PORTFOLIO GRID ═══════════════════ */}
-      <section
-        id="portfolio-grid"
-        className="w-container max-w-none mx-auto px-0 md:px-0 px-6 py-16"
-        aria-label="Portfolio Holdings Grid"
-      >
-        {filteredSubsidiaries.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredSubsidiaries.map((subsidiary) => (
-              <SubsidiaryCard key={subsidiary.id} subsidiary={subsidiary} />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-24">
-            <span
-              className="material-symbols-outlined text-6xl text-slate-200 mb-4 block"
-              aria-hidden="true"
-            >
-              search_off
-            </span>
-            <p className="text-slate-400 font-bold uppercase tracking-widest text-sm">
-              No holdings found matching your search.
-            </p>
-            <button
-              onClick={() => {
-                setSearchQuery("");
-                setActiveFilter("all");
-              }}
-              className="mt-4 text-xs font-bold uppercase tracking-widest text-accent-gold hover:underline"
-            >
-              Clear Filters
-            </button>
-          </div>
-        )}
-      </section>
+        {/* ═══════════════════ PORTFOLIO GRID ═══════════════════ */}
+        <section
+          id="portfolio-grid"
+          className="w-container max-w-none mx-auto px-0 md:px-0 px-6 py-16"
+          aria-label="Portfolio Holdings Grid"
+        >
+          {filteredSubsidiaries.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredSubsidiaries.map((subsidiary) => (
+                <SubsidiaryCard key={subsidiary.id} subsidiary={subsidiary} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-24">
+              <span
+                className="material-symbols-outlined text-6xl text-slate-200 mb-4 block"
+                aria-hidden="true"
+              >
+                search_off
+              </span>
+              <p className="text-slate-400 font-bold uppercase tracking-widest text-sm">
+                No holdings found matching your search.
+              </p>
+              <button
+                onClick={() => {
+                  setSearchQuery("");
+                  setActiveFilter("all");
+                }}
+                className="mt-4 text-xs font-bold uppercase tracking-widest text-accent-gold hover:underline"
+              >
+                Clear Filters
+              </button>
+            </div>
+          )}
+        </section>
+      </div>
 
       {/* ═══════════════════ STRATEGIC INQUIRY CTA ═══════════════════ */}
       <section className="bg-background-dark py-24 border-t border-white/5">
