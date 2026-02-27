@@ -72,12 +72,12 @@ export default function InquiryForm() {
             </div>
 
             <form
-                className="space-y-16"
+                className="space-y-24"
                 onSubmit={handleSubmit}
                 noValidate
             >
                 {/* Principal Fields */}
-                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-16 border-0 p-0 m-0">
+                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-20 border-0 p-0 m-0">
                     <legend className="sr-only">Principal Information</legend>
                     <div className="space-y-6">
                         <label
@@ -91,7 +91,7 @@ export default function InquiryForm() {
                             type="text"
                             required
                             placeholder="Principal or Authorized Representative"
-                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm outline-none w-full"
+                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm outline-none w-full"
                             aria-required="true"
                         />
                     </div>
@@ -107,14 +107,14 @@ export default function InquiryForm() {
                             type="text"
                             required
                             placeholder="Institution / Family Office"
-                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm outline-none w-full"
+                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm outline-none w-full"
                             aria-required="true"
                         />
                     </div>
                 </fieldset>
 
                 {/* Email & Phone */}
-                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-16 border-0 p-0 m-0">
+                <fieldset className="grid grid-cols-1 md:grid-cols-2 gap-20 border-0 p-0 m-0">
                     <legend className="sr-only">Contact Information</legend>
                     <div className="space-y-6">
                         <label
@@ -128,7 +128,7 @@ export default function InquiryForm() {
                             type="email"
                             required
                             placeholder="name@institution.com"
-                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm outline-none w-full"
+                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm outline-none w-full"
                             aria-required="true"
                         />
                     </div>
@@ -143,7 +143,7 @@ export default function InquiryForm() {
                             id="phone"
                             type="tel"
                             placeholder="+1 212 555 0198"
-                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm outline-none w-full"
+                            className="form-input-underline bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm outline-none w-full"
                         />
                     </div>
                 </fieldset>
@@ -191,7 +191,7 @@ export default function InquiryForm() {
                     </label>
                     <select
                         id="region"
-                        className="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm text-primary appearance-none cursor-pointer outline-none"
+                        className="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm text-primary appearance-none cursor-pointer outline-none"
                     >
                         <option value="">Select Operational Region</option>
                         <option value="emea">EMEA - Eurozone Focus</option>
@@ -217,7 +217,7 @@ export default function InquiryForm() {
                         id="inquiry-summary"
                         rows={5}
                         placeholder="Briefly outline the objective of the mandate..."
-                        className="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary py-6 px-0 text-base md:text-sm placeholder:text-primary/20 resize-none outline-none transition-colors"
+                        className="w-full bg-transparent border-0 border-b border-primary/20 focus:border-primary py-4 px-0 text-base md:text-sm placeholder:text-primary/20 resize-none outline-none transition-colors"
                         required
                         aria-required="true"
                     />
