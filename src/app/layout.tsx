@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "Architectural rigor in global B2B expansion. We build the frameworks of the next industrial era.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "Maykott Group",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Maykott Group | Global B2B Industrial Holding Company",
     description:
       "Architectural rigor in global B2B expansion. We build the frameworks of the next industrial era.",
-    images: ["/og-image.jpg"],
+    images: ["/opengraph-image.jpg"],
   },
   robots: {
     index: true,
