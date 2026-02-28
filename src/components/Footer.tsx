@@ -29,25 +29,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mb-24">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 md:gap-3 mb-8 group">
-              <div className="size-6 md:size-8 bg-accent-gold flex items-center justify-center rounded-sm">
-
-                <svg
-                  className="text-primary size-4"
-                  fill="none"
-                  viewBox="0 0 48 48"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-              <span className="text-xl md:text-2xl font-black tracking-tighter uppercase">
-                Maykott <span className="text-accent-gold">Group</span>
-              </span>
+            <Link href="/" className="flex items-center mb-8">
+              <img
+                src="/logo/footer-logo.svg"
+                alt="Maykott Group"
+                className="h-8 md:h-10 w-auto"
+              />
             </Link>
 
             <div className="text-white/70 max-w-sm text-xs md:text-sm leading-relaxed mb-6 font-medium tracking-wide">

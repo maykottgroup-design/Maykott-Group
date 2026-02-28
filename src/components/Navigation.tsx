@@ -54,26 +54,14 @@ export default function Navigation() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-3 group"
+            className="flex items-center"
             aria-label="Maykott Group - Home"
           >
-            <div className="size-8 bg-primary flex items-center justify-center rounded-sm group-hover:bg-accent-gold transition-colors duration-300">
-              <svg
-                className="text-white size-4"
-                fill="none"
-                viewBox="0 0 48 48"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path
-                  d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <span className="text-lg md:text-xl font-black tracking-tighter uppercase text-primary">
-              Maykott <span className="text-accent-gold">Group</span>
-            </span>
+            <img
+              src="/logo/header-logo.svg"
+              alt="Maykott Group"
+              className="h-6 md:h-8 w-auto"
+            />
           </Link>
 
 
