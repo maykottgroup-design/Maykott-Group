@@ -6,7 +6,7 @@ import { getFeaturedSubsidiaries } from "@/data/subsidiaries";
 import { getFeaturedLeaders } from "@/data/leadership";
 
 export const metadata: Metadata = {
-  title: "Maykott Group | Global B2B Industrial Holding Company",
+  title: "Maykott Holdings | Global B2B Industrial Holding Company",
   description:
     "A global B2B industrial holding company deploying capital with architectural precision across infrastructure, technology, energy, and logistics. Partner with Maykott Group.",
 };
@@ -34,12 +34,12 @@ export default function HomePage() {
           <div className="mb-16 flex flex-col lg:flex-row lg:justify-between lg:items-end gap-12">
             <div className="max-w-4xl">
               <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-accent-gold mb-8 animate-fade-in">
-                Established Excellence
+                Enduring Architecture
               </p>
               <h1 className="text-[10.5vw] sm:text-[8vw] md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.9] uppercase animate-slide-up flex flex-col">
-                <span>Shaping The</span>
+                <span>Establishing</span>
                 <span>Architectural</span>
-                <span>Future.</span>
+                <span>Excellence</span>
               </h1>
 
 
@@ -48,8 +48,7 @@ export default function HomePage() {
 
             <div className="lg:max-w-sm xl:max-w-md pb-6 animate-fade-in">
               <p className="text-primary/70 text-lg leading-relaxed font-medium border-l border-accent-gold/30 pl-8">
-                A premium legacy built on institutional stability, prestige, and
-                the pursuit of structural perfection.
+                Architecting the frameworks through which resilient enterprises are built, scaled, and sustained across industries.
               </p>
             </div>
           </div>
