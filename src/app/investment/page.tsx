@@ -137,29 +137,30 @@ export default function InvestmentPage() {
       </section>
 
       {/* ═══════════════════════════ PHILOSOPHY ═════════════════════════════════ */}
+      {/* ═══════════════════════════ PHILOSOPHY ═════════════════════════════════ */}
       <section
-        className="py-24 border-b border-primary/10 bg-neutral-50"
+        className="py-24 border-b border-white/10 bg-black"
         aria-label="Investment Philosophy"
       >
         <div className="w-container max-w-none mx-auto px-0">
           <div className="grid lg:grid-cols-2 gap-20">
             <div>
-              <span className="text-xs font-black uppercase tracking-[0.2em] text-primary/40 mb-6 block">
+              <span className="text-xs font-black uppercase tracking-[0.2em] text-accent-gold mb-6 block">
                 Our Mandate
               </span>
-              <h2 className="text-4xl md:text-5xl font-black leading-tight text-primary uppercase mb-8">
+              <h2 className="text-4xl md:text-5xl font-black leading-tight text-white uppercase mb-8">
                 The &ldquo;Maykott Edge&rdquo; in Risk Mitigation.
               </h2>
-              <div className="w-24 h-2 bg-primary mb-8" />
+              <div className="w-24 h-2 bg-accent-gold mb-8" />
             </div>
             <div className="flex flex-col gap-6">
-              <p className="text-xl leading-relaxed font-medium text-slate-800">
+              <p className="text-xl leading-relaxed font-medium text-white/90">
                 At Maykott Group, our philosophy is anchored in a disciplined
                 approach to sustainable growth. We believe in the power of
                 institutional precision and the compounding value of strategic
                 alignment.
               </p>
-              <p className="text-lg leading-relaxed text-slate-600">
+              <p className="text-lg leading-relaxed text-white/60">
                 We operate where others hesitate—navigating complex market
                 dynamics through a blend of analytical rigor and operational
                 expertise. Our commitment is to the preservation and expansion
