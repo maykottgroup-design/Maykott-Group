@@ -1,0 +1,43 @@
+﻿diff --git a/src/app/insights/page.tsx b/src/app/insights/page.tsx
+index 1b64523..2a71ed2 100644
+--- a/src/app/insights/page.tsx
++++ b/src/app/insights/page.tsx
+@@ -234,7 +234,7 @@ export default function InsightsPage() {
+             <div className="flex items-center gap-6">
+               <Image
+                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"
+-                alt="Arthur Maykott - Managing Director"
++                alt="S. Maykott - Managing Director"
+                 width={64}
+                 height={64}
+                 className="border border-white/20 object-cover size-16"
+@@ -242,7 +242,7 @@ export default function InsightsPage() {
+               />
+               <div>
+                 <p className="font-bold text-lg leading-none uppercase tracking-tighter">
+-                  Arthur Maykott
++                  S. Maykott
+                 </p>
+                 <p className="text-xs font-bold uppercase tracking-widest opacity-40 mt-1">
+                   Managing Director
+diff --git a/src/data/leadership.ts b/src/data/leadership.ts
+index e5af416..9e272f8 100644
+--- a/src/data/leadership.ts
++++ b/src/data/leadership.ts
+@@ -20,13 +20,13 @@ export interface LeadershipProfile {
+ 
+ export const leadershipTeam: LeadershipProfile[] = [
+   {
+-    id: "arthur-maykott",
+-    name: "Arthur Maykott",
++    id: "S.-maykott",
++    name: "S. Maykott",
+     title: "Managing Director",
+     bio: "Leading the vision and strategic direction of the group with over 25 years in private equity and industrial turnarounds. Previously Managing Partner at Thorne Capital Group and Head of M&A at Deutsche Industriebank.",
+     imageUrl:
+       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
+-    imageAlt: "Arthur Maykott - Managing Director, Maykott Group",
++    imageAlt: "S. Maykott - Managing Director, Maykott Group",
+     linkedIn: "#",
+     featured: true,
+     order: 1,

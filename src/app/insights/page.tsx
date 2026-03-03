@@ -234,7 +234,7 @@ export default function InsightsPage() {
             <div className="flex items-center gap-6">
               <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"
-                alt="Arthur Maykott - Managing Director"
+                alt="S. Maykott - Managing Director"
                 width={64}
                 height={64}
                 className="border border-white/20 object-cover size-16"
@@ -242,7 +242,7 @@ export default function InsightsPage() {
               />
               <div>
                 <p className="font-bold text-lg leading-none uppercase tracking-tighter">
-                  Arthur Maykott
+                  S. Maykott
                 </p>
                 <p className="text-xs font-bold uppercase tracking-widest opacity-40 mt-1">
                   Managing Director

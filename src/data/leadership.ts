@@ -20,13 +20,13 @@ export interface LeadershipProfile {
 
 export const leadershipTeam: LeadershipProfile[] = [
   {
-    id: "arthur-maykott",
-    name: "Arthur Maykott",
+    id: "S.-maykott",
+    name: "S. Maykott",
     title: "Managing Director",
     bio: "Leading the vision and strategic direction of the group with over 25 years in private equity and industrial turnarounds. Previously Managing Partner at Thorne Capital Group and Head of M&A at Deutsche Industriebank.",
     imageUrl:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
-    imageAlt: "Arthur Maykott - Managing Director, Maykott Group",
+    imageAlt: "S. Maykott - Managing Director, Maykott Group",
     linkedIn: "#",
     featured: true,
     order: 1,
