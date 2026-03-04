@@ -5,9 +5,9 @@ import Link from "next/link";
 import { getAllLeaders } from "@/data/leadership";
 
 export const metadata: Metadata = {
-  title: "About | Maykott Group",
+  title: "About | Maykott Holdings",
   description:
-    "Discover the Maykott Group story — a decade of architectural excellence, strategic acquisitions, and global industrial leadership across critical B2B sectors.",
+    "Discover the Maykott Holdings story — a decade of architectural excellence, strategic acquisitions, and global industrial leadership across critical B2B sectors.",
 };
 
 const milestones = [
@@ -15,7 +15,7 @@ const milestones = [
     year: "2014",
     title: "Genesis",
     description:
-      "Founding of Maykott Group in Zurich with a mission to stabilize European supply chains through precision M&A.",
+      "Founding of Maykott Holdings in Zurich with a mission to stabilize European supply chains through precision M&A.",
   },
   {
     year: "2017",
@@ -27,7 +27,7 @@ const milestones = [
     year: "2020",
     title: "The Titan Pivot",
     description:
-      "Restructuring of the Group portfolio to focus exclusively on heavy infrastructure and industrial logistics.",
+      "Restructuring of the Holdings portfolio to focus exclusively on heavy infrastructure and industrial logistics.",
   },
   {
     year: "2022",
@@ -79,7 +79,7 @@ export default function AboutPage() {
       {/* ═══════════════════════════════════ HERO ═══════════════════════════════════ */}
       <section
         className="pt-16 pb-16 bg-primary"
-        aria-label="About Maykott Group"
+        aria-label="About Maykott Holdings"
       >
 
         <div className="w-container max-w-none mx-auto px-0 md:px-0">
@@ -119,7 +119,7 @@ export default function AboutPage() {
           <div className="w-full aspect-[21/7] overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
-              alt="Maykott Group Global Headquarters — modern architectural interior"
+              alt="Maykott Holdings Global Headquarters — modern architectural interior"
               width={2069}
               height={888}
               className="w-full h-full object-cover"
@@ -147,7 +147,7 @@ export default function AboutPage() {
               </h2>
               <div className="w-20 h-1 bg-accent-gold mb-8" />
               <p className="text-base leading-relaxed mb-10 text-neutral-700">
-                By 2034, Maykott Group will redefine the global infrastructure
+                By 2034, Maykott Holdings will redefine the global infrastructure
                 landscape. Our target is a{" "}
                 <span className="text-primary font-bold">$50B valuation</span>,
                 driven by strategic market dominance in emerging sectors.
@@ -194,7 +194,7 @@ export default function AboutPage() {
             <div className="md:col-span-6 relative">
               <Image
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
-                alt="Maykott Group - Strategic corporate headquarters interior"
+                alt="Maykott Holdings - Strategic corporate headquarters interior"
                 width={800}
                 height={800}
                 className="w-full aspect-square object-cover"

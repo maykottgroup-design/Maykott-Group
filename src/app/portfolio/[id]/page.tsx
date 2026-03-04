@@ -83,7 +83,7 @@ export default function SubsidiaryDetailPage() {
                                             Strategic Mandate
                                         </h3>
                                         <p className="text-primary/70 leading-relaxed italic">
-                                            As a core pillar of the Maykott Group ecosystem, {subsidiary.name} focuses
+                                            As a core pillar of the Maykott Holdings ecosystem, {subsidiary.name} focuses
                                             on operational excellence and long-term structural resilience within the {subsidiary.sector} landscape.
                                         </p>
                                     </div>

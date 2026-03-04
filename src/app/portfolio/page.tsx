@@ -249,7 +249,7 @@ export default function PortfolioPage() {
           <div className="mt-16 relative w-full overflow-hidden aspect-[21/6]">
             <Image
               src="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop"
-              alt="Maykott Group portfolio companies — global industrial architecture"
+              alt="Maykott Holdings portfolio companies — global industrial architecture"
               fill
               className="object-cover"
 

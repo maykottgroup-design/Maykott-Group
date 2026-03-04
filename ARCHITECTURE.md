@@ -1,8 +1,8 @@
-# Maykott Group — Website Architecture Documentation
+# Maykott Holdings — Website Architecture Documentation
 
 ## Project Overview
 
-This is the production-ready corporate website for **Maykott Group**, a global B2B industrial holding company. Built on **Next.js 15** (App Router) with **TypeScript**, **Tailwind CSS**, and a data-layer architecture for easy CMS integration.
+This is the production-ready corporate website for **Maykott Holdings**, a global B2B industrial holding company. Built on **Next.js 15** (App Router) with **TypeScript**, **Tailwind CSS**, and a data-layer architecture for easy CMS integration.
 
 ---
 

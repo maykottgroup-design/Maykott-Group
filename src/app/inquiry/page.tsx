@@ -2,7 +2,7 @@ import SiteLayout from "@/components/SiteLayout";
 import InquiryForm from "./InquiryForm";
 
 export const metadata = {
-  title: "Inquiry | Maykott Group",
+  title: "Inquiry | Maykott Holdings",
   description:
     "Formal engagement for sovereign, institutional, and private capital interests. All transmissions are encrypted under Tier-1 security protocols.",
 };

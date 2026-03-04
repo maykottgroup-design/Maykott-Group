@@ -3,9 +3,9 @@ import SiteLayout from "@/components/SiteLayout";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Investment Strategy | Maykott Group",
+  title: "Investment Strategy | Maykott Holdings",
   description:
-    "Explore Maykott Group's institutional investment mandate — our acquisition criteria, 4-step lifecycle process, and strategic framework for deploying capital with precision.",
+    "Explore Maykott Holdings' institutional investment mandate — our acquisition criteria, 4-step lifecycle process, and strategic framework for deploying capital with precision.",
 };
 
 const acquisitionCriteria = [
@@ -155,7 +155,7 @@ export default function InvestmentPage() {
             </div>
             <div className="flex flex-col gap-6">
               <p className="text-xl leading-relaxed font-medium text-white/90">
-                At Maykott Group, our philosophy is anchored in a disciplined
+                At Maykott Holdings, our philosophy is anchored in a disciplined
                 approach to sustainable growth. We believe in the power of
                 institutional precision and the compounding value of strategic
                 alignment.
@@ -319,7 +319,7 @@ export default function InvestmentPage() {
               &ldquo;Precision is the precursor to power.&rdquo;
             </p>
             <cite className="mt-6 block text-accent-gold text-xs font-bold uppercase tracking-widest not-italic">
-              — Maykott Group Investment Charter
+              — Maykott Holdings Investment Charter
             </cite>
           </blockquote>
         </div>

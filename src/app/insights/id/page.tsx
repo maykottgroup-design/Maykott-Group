@@ -105,7 +105,7 @@ export default function InsightDetailPage() {
 
 
                                     <cite className="relative block mt-6 text-accent-gold text-[10px] font-bold uppercase tracking-widest not-italic">
-                                        — {insight.author}, Maykott Group
+                                        — {insight.author}, Maykott Holdings
                                     </cite>
                                 </div>
                                 <p>

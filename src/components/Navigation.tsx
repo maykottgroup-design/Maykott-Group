@@ -1,5 +1,5 @@
 /**
- * @fileoverview Navigation component for Maykott Group website.
+ * @fileoverview Navigation component for Maykott Holdings website.
  * Provides sticky, transparent-to-solid animated navigation with mobile support.
  */
 
@@ -55,11 +55,11 @@ export default function Navigation() {
           <Link
             href="/"
             className="flex items-center"
-            aria-label="Maykott Group - Home"
+            aria-label="Maykott Holdings - Home"
           >
             <img
               src="/logo/header-logo.svg"
-              alt="Maykott Group"
+              alt="Maykott Holdings"
               className="h-6 md:h-8 w-auto"
             />
           </Link>

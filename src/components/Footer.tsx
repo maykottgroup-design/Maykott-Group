@@ -1,5 +1,5 @@
 /**
- * @fileoverview Footer component for Maykott Group website.
+ * @fileoverview Footer component for Maykott Holdings website.
  * Consistent footer across all pages with navigation links.
  */
 
@@ -32,7 +32,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center mb-8">
               <img
                 src="/logo/footer-logo.svg"
-                alt="Maykott Group"
+                alt="Maykott Holdings"
                 className="h-8 md:h-10 w-auto"
               />
             </Link>
@@ -92,7 +92,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-white/30 text-center md:text-left">
-            © {currentYear} MAYKOTT INDUSTRIAL HOLDING GROUP INC. ALL RIGHTS
+            © {currentYear} MAYKOTT INDUSTRIAL HOLDINGS INC. ALL RIGHTS
             RESERVED.
           </span>
           <div className="flex gap-4 text-white/40">

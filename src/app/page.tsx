@@ -8,7 +8,7 @@ import { getFeaturedLeaders } from "@/data/leadership";
 export const metadata: Metadata = {
   title: "Maykott Holdings | Global B2B Industrial Holding Company",
   description:
-    "A global B2B industrial holding company deploying capital with architectural precision across infrastructure, technology, energy, and logistics. Partner with Maykott Group.",
+    "A global B2B industrial holding company deploying capital with architectural precision across infrastructure, technology, energy, and logistics. Partner with Maykott Holdings.",
 };
 
 const statsData = [
@@ -57,7 +57,7 @@ export default function HomePage() {
           <div className="relative w-full overflow-hidden aspect-[21/9] group mb-12 shadow-2xl">
             <Image
               src="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop"
-              alt="Maykott Group - Modern architectural structure representing precision and scale"
+              alt="Maykott Holdings - Modern architectural structure representing precision and scale"
               fill
               className="object-cover transition-all duration-1000 group-hover:scale-105"
               priority
@@ -142,17 +142,17 @@ export default function HomePage() {
               {
                 num: "01",
                 title: "Strategic Rigor",
-                desc: "Deploying capital with surgical precision and long-term vision.",
+                desc: "Initiatives are evaluated through disciplined structural alignment and long-term enterprise viability.",
               },
               {
                 num: "02",
-                title: "Operational Alpha",
-                desc: "Implementing industrial-grade operational frameworks across all subsidiaries.",
+                title: "Operational Clarity",
+                desc: "Execution occurs within clearly defined initiatives supported by architectural oversight.",
               },
               {
                 num: "03",
                 title: "Compound Growth",
-                desc: "Leveraging cross-portfolio synergies to drive exponential value creation.",
+                desc: "Enterprises are developed to evolve methodically, reinforcing long-term continuity.",
               },
             ].map((pillar) => (
               <div
@@ -399,8 +399,7 @@ export default function HomePage() {
 
             </div>
             <p className="text-white/50 max-w-sm uppercase text-xs tracking-widest leading-relaxed">
-              OUR EXECUTIVE COMMITTED TO THE OPERATIONALIZATION OF A GLOBAL
-              INDUSTRIAL MACROTHESIS. WE BUILD. WE SCALE.
+              Guiding the architectural development of the organization and overseeing long-term enterprise strategy.
             </p>
           </div>
 

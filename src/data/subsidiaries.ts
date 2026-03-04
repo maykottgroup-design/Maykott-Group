@@ -13,12 +13,12 @@ export interface Subsidiary {
   id: string;
   name: string;
   sector:
-    | "infrastructure"
-    | "technology"
-    | "energy"
-    | "logistics"
-    | "finance"
-    | "environmental";
+  | "infrastructure"
+  | "technology"
+  | "energy"
+  | "logistics"
+  | "finance"
+  | "environmental";
   sectorLabel: string;
   description: string;
   assetsUnderManagement: string;
@@ -181,7 +181,7 @@ export const subsidiaries: Subsidiary[] = [
     sector: "technology",
     sectorLabel: "Automation Systems",
     description:
-      "Industrial robotics integration and autonomous manufacturing systems. Deployed across 18 production facilities in the Maykott Group ecosystem.",
+      "Industrial robotics integration and autonomous manufacturing systems. Deployed across 18 production facilities in the Maykott Holdings ecosystem.",
     assetsUnderManagement: "$410M",
     annualGrowth: "+34.1%",
     icon: "precision_manufacturing",

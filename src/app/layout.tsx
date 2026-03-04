@@ -12,13 +12,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.maykott.com"),
   title: {
-    default: "Maykott Group | Global B2B Industrial Holding Company",
-    template: "%s | Maykott Group",
+    default: "Maykott Holdings | Global B2B Industrial Holding Company",
+    template: "%s | Maykott Holdings",
   },
   description:
-    "Maykott Group is a global B2B industrial holding company deploying capital with architectural precision across infrastructure, technology, energy, and logistics sectors worldwide.",
+    "Maykott Holdings is a global B2B industrial holding company deploying capital with architectural precision across infrastructure, technology, energy, and logistics sectors worldwide.",
   keywords: [
-    "Maykott Group",
+    "Maykott Holdings",
     "holding company",
     "B2B industrial",
     "global investment",
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
     "institutional investor",
     "portfolio management",
   ],
-  authors: [{ name: "Maykott Group" }],
-  creator: "Maykott Group",
-  publisher: "Maykott Group",
+  authors: [{ name: "Maykott Holdings" }],
+  creator: "Maykott Holdings",
+  publisher: "Maykott Holdings",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.maykott.com",
-    siteName: "Maykott Group",
-    title: "Maykott Group | Global B2B Industrial Holding Company",
+    siteName: "Maykott Holdings",
+    title: "Maykott Holdings | Global B2B Industrial Holding Company",
     description:
       "Architectural rigor in global B2B expansion. We build the frameworks of the next industrial era.",
     images: [
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
         url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Maykott Group",
+        alt: "Maykott Holdings",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Maykott Group | Global B2B Industrial Holding Company",
+    title: "Maykott Holdings | Global B2B Industrial Holding Company",
     description:
       "Architectural rigor in global B2B expansion. We build the frameworks of the next industrial era.",
     images: ["/opengraph-image.jpg"],
@@ -93,7 +93,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Maykott Group",
+              name: "Maykott Holdings",
               alternateName: "Maykott Industrial Holding Group",
               url: "https://www.maykott.com",
               logo: "https://www.maykott.com/logo.png",
@@ -106,7 +106,7 @@ export default function RootLayout({
               },
               sameAs: ["https://www.linkedin.com/company/maykott-group"],
               description:
-                "Maykott Group is a global B2B industrial holding company with a portfolio spanning enterprise technology, infrastructure, energy systems, and logistics.",
+                "Maykott Holdings is a global B2B industrial holding company with a portfolio spanning enterprise technology, infrastructure, energy systems, and logistics.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "28 Liberty St",

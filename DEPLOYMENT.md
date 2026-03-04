@@ -1,4 +1,4 @@
-# Maykott Group — Deployment Guide
+# Maykott Holdings — Deployment Guide
 ## GoDaddy Deluxe Hosting
 
 ---
