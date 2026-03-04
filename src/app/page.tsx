@@ -121,22 +121,17 @@ export default function HomePage() {
                 The Maykott Standard
               </h2>
               <h3 className="text-3xl md:text-6xl font-black uppercase leading-tight mb-8">
-                A 10-Year Narrative of Excellence.
+                Designed for Structural Coherence.
               </h3>
               <div className="h-1 w-24 bg-accent-gold mb-8 md:mb-12" />
             </div>
 
             <div className="space-y-8 text-white/90 text-lg leading-relaxed font-normal">
               <p>
-                A structured ambition narrative focused on operational
-                excellence, strategic rigor, and the compounding power of global
-                scale. We define the benchmark for B2B industrial holding groups
-                through uncompromising quality and architectural precision.
+                Maykott is guided by a philosophy of deliberate enterprise design. Rather than pursuing expansion through momentum, emphasis is placed on establishing architectural clarity from the outset. Governance principles, ownership alignment, and capital discipline are embedded early to ensure that each initiative operates within a defined structural framework.
               </p>
               <p>
-                Our methodology transcends simple capital allocation; we build
-                the frameworks that allow complex industrial ecosystems to
-                thrive in a volatile global economy.
+                This approach preserves continuity as new ventures emerge. Growth is approached methodically, with structure and long-term stewardship guiding every stage of development.
               </p>
             </div>
           </div>
