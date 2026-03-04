@@ -94,7 +94,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Maykott Holdings",
-              alternateName: "Maykott Industrial Holding Group",
+              alternateName: "Maykott Holdings Inc.",
               url: "https://www.maykott.com",
               logo: "https://www.maykott.com/logo.png",
               contactPoint: {
@@ -104,7 +104,7 @@ export default function RootLayout({
                 areaServed: "Worldwide",
                 availableLanguage: "English",
               },
-              sameAs: ["https://www.linkedin.com/company/maykott-group"],
+              sameAs: ["https://www.linkedin.com/company/maykott-holdings"],
               description:
                 "Maykott Holdings is a global B2B industrial holding company with a portfolio spanning enterprise technology, infrastructure, energy systems, and logistics.",
               address: {
