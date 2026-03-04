@@ -128,7 +128,7 @@ export default function HomePage() {
 
             <div className="space-y-8 text-white/90 text-lg leading-relaxed font-normal">
               <p>
-                Maykott is guided by a philosophy of deliberate enterprise design. Rather than pursuing expansion through momentum, emphasis is placed on establishing architectural clarity from the outset. Governance principles, ownership alignment, and capital discipline are embedded early to ensure that each initiative operates within a defined structural framework.
+                Maykott is built upon the principle that enduring enterprises are not assembled opportunistically but architected deliberately.
               </p>
               <p>
                 This approach preserves continuity as new ventures emerge. Growth is approached methodically, with structure and long-term stewardship guiding every stage of development.
@@ -300,8 +300,7 @@ export default function HomePage() {
                 Acquisition Interest
               </h4>
               <p className="text-white text-3xl font-black leading-tight mb-10">
-                We are seeking partnerships in critical infrastructure,
-                logistical automation, and specialized manufacturing.
+                Strategic collaboration is welcomed with partners aligned with disciplined enterprise development, technological innovation, and long-term structural thinking.
               </p>
               <Link
                 href="/investment"
